@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.karmazin.controller.WorkScreen">
+    <center>
+        <TabPane fx:id="tabTabPanel" prefHeight="-Infinity" prefWidth="-Infinity" tabClosingPolicy="UNAVAILABLE"
+                 tabMaxHeight="30.0" tabMaxWidth="200.0" tabMinHeight="20.0" tabMinWidth="50.0"
+                 BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0"
+              style="-fx-spacing: 10; -fx-background-color: #F3F3F3;" BorderPane.alignment="CENTER">
+            <children>
+                <Label maxHeight="-Infinity" minHeight="30.0" minWidth="-Infinity" text="HTTP/IP:">
+                    <font>
+                        <Font name="Comic Sans MS" size="16.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="adressTextField" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="100.0">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </TextField>
+                <Button fx:id="addServerButton" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="50.0"
+                        mnemonicParsing="false" text="Добавить сервер">
+                    <font>
+                        <Font name="Comic Sans MS" size="10.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="delServerButton" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="50.0"
+                        mnemonicParsing="false" text="Удалить сервер">
+                    <font>
+                        <Font name="Comic Sans MS" size="10.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="exitButton" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="50.0"
+                        mnemonicParsing="false" text="Выход из аккаунта">
+                    <font>
+                        <Font name="Comic Sans MS" size="10.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="debugButton" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="50.0"
+                        mnemonicParsing="false" text="Отладка">
+                    <font>
+                        <Font name="Comic Sans MS" size="10.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="selfTestButton" maxHeight="30.0" maxWidth="150.0" minHeight="30.0" minWidth="50.0"
+                        mnemonicParsing="false" text="Тестирование">
+                    <font>
+                        <Font name="Comic Sans MS" size="10.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

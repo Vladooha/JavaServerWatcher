@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0"
+            prefWidth="400.0"
+			style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.karmazin.controller.SimplePopup">
+	<children>
+		<Label fx:id="simplePopupMessageTextField"
+		       layoutX="100.0"
+		       layoutY="90.0"
+		       text="Label"/>
+		<Button fx:id="simplePopupOkButton"
+		        defaultButton="true"
+		        layoutX="345.0"
+		        layoutY="155.0"
+		        mnemonicParsing="false"
+		        text="OK"/>
+		<ImageView fitHeight="55.0"
+		           fitWidth="63.0"
+		           layoutX="14.0"
+		           layoutY="73.0"
+		           pickOnBounds="true"
+		           preserveRatio="true">
+			<image>
+				<Image url="/pngs/alert-128.png"/>
+			</image>
+		</ImageView>
+	</children>
+</AnchorPane>
