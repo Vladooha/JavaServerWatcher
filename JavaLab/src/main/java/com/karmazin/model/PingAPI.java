@@ -31,16 +31,20 @@ public class PingAPI {
 
     /** OS-depedent commandline for ping utility*/
     private static String cmd;
+    private static String charset;
 
     static {
         String os = System.getProperty("os.name").toLowerCase();
+        //System.out.println("OS: " + os);
 
         if (os.indexOf("win") >= 0) {
             // Windows' ping utility
-            cmd = "ping -n 1 - l ";
-        } else if (os.indexOf("nix") >= 0) {
-            // Unix or Linux ping utility
+            cmd = "ping -n 1 -l ";
+            charset = "CP866";
+        } else if (os.indexOf("nux") >= 0) {
+            // Linux ping utility
             cmd = "ping -c 1 -s ";
+            charset = "UTF-8";
         }
     }
 
@@ -52,23 +56,25 @@ public class PingAPI {
     @Override
     public String toString() {
         return
-            "Ответ от " + IP +
-            ": число байт = " + byteSize +
-            ", время = " + time + "мс" +
-            ", TTL = " + TTL;
+                "Ответ от " + IP +
+                        ": число байт = " + byteSize +
+                        ", время = " + time + "мс" +
+                        ", TTL = " + TTL;
     }
 
     public int ping() throws IOException {
         // TODO OS-independent Java ICMP-pinger
         time = -1;
 
+        //Runtime.getRuntime().exec("chcp 65001");
+        //System.out.println("Cmd: " + cmd + byteSize + " " + IP);
         p = Runtime.getRuntime().exec(cmd + byteSize + " " + IP);
-        try (BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream(), "UTF-8"))) {
+        try (BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream(), charset))) {
             String data = input.readLine();
             data += input.readLine();
             data += input.readLine();
 
-            Pattern timePattern = Pattern.compile("time=[0-9]{1,3}");
+            Pattern timePattern = Pattern.compile("time=[0-9]{1,3}|ремя=[0-9]{1,3}");
             Pattern ttlPattern = Pattern.compile("ttl=[0-9]{1,3}");
 
             Matcher match = timePattern.matcher(data);

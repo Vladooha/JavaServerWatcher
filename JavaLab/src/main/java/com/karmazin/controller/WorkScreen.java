@@ -19,6 +19,7 @@ import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -67,6 +68,7 @@ public class WorkScreen {
 
     // Server ping variables
     private static Map<String, ServerPingWatcher> serversMap = new HashMap<>();
+    private static Map<String, HttpWatcher> httpsMap = new HashMap<>();
     private static final int delay = 400;
 
     // Initialize JavaFX-method (invokes before setupWindow())
@@ -119,8 +121,18 @@ public class WorkScreen {
                     logger.log(Level.INFO,"Server " + currTab.getText() + " is deleting...");
 
                     // UserAPI have authority for operation
-                    serversMap.get(currTab.getText()).shutdown();
+                    ServerPingWatcher pinger = serversMap.get(currTab.getText());
+                    if (pinger != null) {
+                        pinger.shutdown();
+                    }
                     serversMap.remove(currTab.getText());
+
+                    HttpWatcher httpLabler = httpsMap.get(currTab.getText());
+                    if (httpLabler != null) {
+                        httpLabler.shutdown();
+                    }
+                    httpsMap.remove(currTab.getText());
+
                     tabTabPanel.getTabs().remove(currTab);
 
                     logger.log(Level.INFO, "Deletion complited!");
@@ -213,13 +225,25 @@ public class WorkScreen {
             infoPanel.setSpacing(20);
 
             Label graphLabel = new Label(geoData.toString());
-            graphLabel.setPrefSize(400, 200);
+            //graphLabel.setPrefSize(200, 200);
             graphLabel.setAlignment(Pos.CENTER);
+            graphLabel.setPadding(new Insets(10.0));
             graphLabel.setWrapText(true);
+
+            httpsMap.put(IP, new HttpWatcher());
+            Label httpLabel = httpsMap.get(IP).httpCodeLabel(IP, delay);
+            httpLabel.setPadding(new Insets(20.0));
+            httpLabel.setText("Waiting for http code...");
+
+            VBox textVBox = new VBox();
+            textVBox.setPrefSize(400, 200);
+            textVBox.setAlignment(Pos.CENTER);
+            textVBox.getChildren().add(graphLabel);
+            textVBox.getChildren().add(httpLabel);
 
             ImageView image = new ImageView(yandexMapsAPI.getMapImageIcon(geoData.getLat(), geoData.getLon()));
 
-            infoPanel.getChildren().add(graphLabel);
+            infoPanel.getChildren().add(textVBox);
             infoPanel.getChildren().add(image);
 
             contentPanel.getChildren().add(createChart(IP, delay));
@@ -314,6 +338,10 @@ public class WorkScreen {
         // Stopping all process
         for (ServerPingWatcher pinger : serversMap.values()) {
             pinger.shutdown();
+        }
+
+        for (HttpWatcher http : httpsMap.values()) {
+            http.shutdown();
         }
 
         // Saving settings

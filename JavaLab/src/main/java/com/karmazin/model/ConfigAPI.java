@@ -70,7 +70,7 @@ final public class ConfigAPI {
     }
 
     public static String getPassword() {
-        return config.read(userSettingsSection, loginKey);
+        return config.read(userSettingsSection, passKey);
     }
 
     public static void setLoginData(String login, String password) {
