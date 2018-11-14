@@ -3,9 +3,7 @@ package com.karmazin.controller;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Level;
@@ -37,10 +35,13 @@ import javafx.stage.Stage;
 public class WorkScreen {
     private static LoggerAPI logger = new LoggerAPI(WorkScreen.class.getName());
 
-    private static String xml;
+    private String xml;
+
+    private boolean isTest;
+    private int testCapacity;
 
     private static Stage window;
-    private static Scene scene;
+    private Scene scene;
 
     @FXML
     private TabPane tabTabPanel;
@@ -67,9 +68,10 @@ public class WorkScreen {
     private static final YandexMapsAPI yandexMapsAPI = new YandexMapsAPI(400, 400);
 
     // Server ping variables
-    private static Map<String, ServerPingWatcher> serversMap = new HashMap<>();
-    private static Map<String, HttpWatcher> httpsMap = new HashMap<>();
-    private static final int delay = 400;
+    private ArrayList<Long> timers;
+    private Map<String, ServerPingWatcher> serversMap = new HashMap<>();
+    private Map<String, HttpWatcher> httpsMap = new HashMap<>();
+    private final int delay = 400;
 
     // Initialize JavaFX-method (invokes before setupWindow())
     @FXML
@@ -82,9 +84,19 @@ public class WorkScreen {
         startTab.setContent(tabLayout);
         tabTabPanel.getTabs().add(startTab);
 
+        //window = (Stage) addServerButton.getScene().getWindow();
+
+        if (this == null)
+            addServerButton.setText("GOVNO");
+
         // 'Добавить сервер' button logic
         addServerButton.setOnAction(event -> {
             logger.log(Level.INFO, "Adding new server...");
+
+            long timingBegin = 0, timingEnd = 0;
+            if (isTest) {
+                timingBegin = System.currentTimeMillis();
+            }
 
             if (!adressTextField.getText().isEmpty()) {
                 // --------------------------------------- MultiThread ----------------------------
@@ -108,6 +120,13 @@ public class WorkScreen {
                 }
             } else {
                logger.log(Level.INFO, "Adress field is empty!");
+            }
+
+            if (isTest) {
+                timingEnd = System.currentTimeMillis();
+                if (timers.size() < testCapacity) {
+                    timers.add(timingEnd - timingBegin);
+                }
             }
         });
 
@@ -153,8 +172,6 @@ public class WorkScreen {
             ConfigAPI.unlogin();
             exitPrep();
 
-            window.close();
-
             new LoginScreen().setupWindow(window);
         });
 
@@ -165,15 +182,21 @@ public class WorkScreen {
                 if (ConfigAPI.getDebug()) {
                     logger.log(Level.INFO, "Debug enabled");
                     ConfigAPI.setDebug(false);
+                    logger.muteMode(true);
                 } else {
                     ConfigAPI.setDebug(true);
+                    logger.muteMode(false);
                     logger.log(Level.INFO, "Debug disabled");
                 }
             });
 
             // 'Self tests' button logic
             // TODO SelfTests
-            selfTestButton.setOnAction(event -> ConfigAPI.setSelfTest(true));
+            selfTestButton.setOnAction(event -> {
+                ConfigAPI.setSelfTest(true);
+
+                new TestPreset().setupWindow();
+            });
         } else {
             debugButton.setVisible(false);
             selfTestButton.setVisible(false);
@@ -199,17 +222,42 @@ public class WorkScreen {
             logger.log(Level.INFO, "Program was closed. Bye!");
             System.exit(0);
         });
-
         window.show();
 
-        logger.log(Level.INFO, "Work screen created!");
+        isTest = false;
+    }
+
+    public void setupTestWindow(Stage primaryStage, List<String> adresses) {
+        try {
+            logger.log(Level.INFO, "Creating a work screen...");
+
+            xml = "/fxml/workScreen.fxml";
+            FXMLLoader loader = new FXMLLoader();
+            Parent root = (Parent) loader.load(getClass().getResourceAsStream(xml));
+
+            scene = new Scene(root);
+
+            window = primaryStage;
+            window.setScene(scene);
+            window.setOnCloseRequest(event -> {
+                exitPrep();
+
+                System.exit(0);
+            });
+
+            isTest = true;
+            testCapacity = adresses.size();
+            timers = new ArrayList<Long>(testCapacity);
+        } catch (Exception e) {
+
+        }
     }
 
 
     /// Help-methods
 
     // Creates tab content
-    private static VBox contentPanel(String IP) {
+    private VBox contentPanel(String IP) {
         logger.log(Level.INFO, "Generating view elements in tab " + IP);
 
         GeolocationAPIData geoData = ConfigAPI.getGeoData(IP);
@@ -255,7 +303,7 @@ public class WorkScreen {
 
     // Creates a ping chart (part of tab content)
     // TODO Scroll
-    private static LineChart createChart(String IP, int delay) {
+    private LineChart createChart(String IP, int delay) {
         ObservableList<XYChart.Data<String, Integer>> XYList = FXCollections.observableArrayList();
         ObservableList<String> xAxisCategories = FXCollections.observableArrayList();
 
@@ -366,6 +414,19 @@ public class WorkScreen {
         }
 
         window.close();
+    }
+
+    // Test-methods
+    public List<Long> getTestResults() {
+        if (!isTest) {
+            return null;
+        } else {
+            if (timers.size() < testCapacity) {
+                return null;
+            } else {
+                return timers;
+            }
+        }
     }
 }
 

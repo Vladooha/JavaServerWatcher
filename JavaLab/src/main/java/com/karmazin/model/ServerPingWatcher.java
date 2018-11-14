@@ -30,15 +30,19 @@ public class ServerPingWatcher implements Runnable  {
         timeoutLimit = 50;
     }
 
+    public ServerPingWatcher(String IP, boolean startNow) {
+        this(IP, 1000, 32, 50000, false);
+    }
+
     public ServerPingWatcher(String IP) {
         this(IP, 1000, 32);
     }
 
     public ServerPingWatcher(String IP, int sleep, int byteSize) {
-        this(IP, sleep, byteSize, 50000);
+        this(IP, sleep, byteSize, 50000, true);
     }
 
-    public ServerPingWatcher(String IP, int sleep, int byteSize, int awaitTime) {
+    public ServerPingWatcher(String IP, int sleep, int byteSize, int awaitTime, boolean startNow) {
         this.IP = IP;
         this.sleep = sleep;
         this.byteSize = byteSize;
@@ -48,9 +52,11 @@ public class ServerPingWatcher implements Runnable  {
         this.timeoutCounter = 0;
         this.t = new Thread(this);
 
-        logger.log(Level.INFO,"New watcher for " + IP + ": Sleep " + sleep
-                + ", byteSize " + byteSize + " in Thread: " + t);
-        this.t.start();
+        if (startNow) {
+            logger.log(Level.INFO,"New watcher for " + IP + ": Sleep " + sleep
+                    + ", byteSize " + byteSize + " in Thread: " + t);
+            this.t.start();
+        }
     }
 
     public void run() {

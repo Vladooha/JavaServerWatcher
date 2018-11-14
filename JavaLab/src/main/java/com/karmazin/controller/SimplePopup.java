@@ -54,7 +54,7 @@ public class SimplePopup {
 
             logger.log(Level.INFO, "Error popup: " + message);
         } catch (IOException e) {
-            logger.log(Level.INFO, "Can't host error message =(");
+            logger.log(Level.SEVERE, "Can't host error message =(");
         }
     }
 }
