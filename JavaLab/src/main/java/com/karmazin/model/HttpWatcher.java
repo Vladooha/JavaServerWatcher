@@ -24,7 +24,7 @@ public class HttpWatcher {
             logger.log(Level.INFO,"New http url connection: " + query);
 
             try {
-                connection = (HttpURLConnection) new URL("http://" + query).openConnection();
+                connection = (HttpURLConnection) new URL("https://" + query).openConnection();
                 connection.setUseCaches(false);
                 connection.setConnectTimeout(delay);
                 connection.setReadTimeout(delay);

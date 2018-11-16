@@ -1,9 +1,11 @@
 package com.karmazin.model;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.logging.Level;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * A class that provides information on one PID in a new stream with sleep pauses
@@ -13,15 +15,29 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Do not use at the moment
  */
 public class ProcessWatcher implements Runnable {
+    private static LoggerAPI logger = new LoggerAPI(ProcessWatcher.class.getName());
+
     private int PID;
     private Thread t;
     private final AtomicBoolean running = new AtomicBoolean(false);
     private int sleep;
 
+    File cfg = new File("src" +
+            File.separator + "main" +
+            File.separator + "resources" +
+            File.separator + "logs" +
+            File.separator + "sysload.cfg");
+
+    public ProcessWatcher() {
+        t = new Thread(this);
+        logger.log(Level.INFO, "New watcher for with sleep " + sleep + ": " + t);
+        t.start();
+    }
+    /*
     public ProcessWatcher(int PID) {
         this.PID = PID;
         t = new Thread(this);
-        System.out.println("New watcher for " + PID + ": with sleep " + sleep + ": " + t);
+        logger.log(Level.INFO, "New watcher for " + PID + ": with sleep " + sleep + ": " + t);
         t.start();
     }
 
@@ -29,33 +45,119 @@ public class ProcessWatcher implements Runnable {
         this.PID = PID;
         this.sleep = sleep;
         t = new Thread(this);
-        System.out.println("New watcher for " + PID + ": with sleep " + sleep + ": " + t);
+        logger.log(Level.INFO, "New watcher for " + PID + ": with sleep " + sleep + ": " + t);
         t.start();
     }
-
+    */
     public void run() {
         running.set(true);
+
+        cfg.delete();
+
         while (running.get()) {
             try {
+                /*
                 Process p = Runtime.getRuntime().exec("tasklist /V /FI \"PID eq " + PID + "\" /FO \"CSV\"");
 
                 try (BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()))) {
                     input.readLine();
                     System.out.println(new ProcessData(input.readLine()));
                 }
+                */
+
+                Process pCpu = Runtime.getRuntime().exec("wmic cpu get LoadPercentage /Value");
+                Process pMem = Runtime.getRuntime().exec(
+                        "wmic OS get FreePhysicalMemory,TotalVisibleMemorySize /Value");
+                Thread.sleep(100);
+
+                try (BufferedReader inputCpu = new BufferedReader(new InputStreamReader(pCpu.getInputStream()));
+                        BufferedReader inputMem = new BufferedReader(new InputStreamReader(pMem.getInputStream()))) {
+                    String inputBuffer = "";
+                    int cpuLoad;
+                    long totalMem, freeMem;
+                    for (int i = 0; i < 5; ++i) {
+                        inputBuffer += inputCpu.readLine();
+                    }
+                    for (int i = 0; i < 7; ++i) {
+                        inputBuffer += inputMem.readLine();
+                    }
+
+                    Pattern cpuLoadRegex = Pattern.compile("LoadPercentage=[0-9]*");
+                    Pattern totalMemRegex = Pattern.compile("TotalVisibleMemorySize=[0-9]*");
+                    Pattern freeMemRegex = Pattern.compile("FreePhysicalMemory=[0-9]*");
+
+                    Matcher match = cpuLoadRegex.matcher(inputBuffer);
+                    if (match.find()) {
+                        cpuLoad = Integer.parseInt(match.group().substring("LoadPercentage=".length()));
+                    } else {
+                        cpuLoad = -1;
+                    }
+
+                    match = totalMemRegex.matcher(inputBuffer);
+                    if (match.find()) {
+                        totalMem = Long.parseLong(match.group().substring("TotalVisibleMemorySize=".length()));
+                    } else {
+                        totalMem = -1;
+                    }
+
+                    match = freeMemRegex.matcher(inputBuffer);
+                    if (match.find()) {
+                        freeMem = Long.parseLong(match.group().substring("FreePhysicalMemory=".length()));
+                    } else {
+                        freeMem = -1;
+                    }
+
+                    writeToConf(cpuLoad, totalMem, freeMem);
+                }
 
                 Thread.sleep(sleep);
             } catch (InterruptedException e) {
-                System.err.println(PID + "Interrupted");
+               logger.log(Level.SEVERE,PID + "Interrupted", e);
                 running.set(false);
             } catch (IOException e) {
-                System.err.println("Ошибка потока записи/вывода!");
+                logger.log(Level.SEVERE,"Ошибка потока записи/вывода!", e);
                 running.set(false);
             } catch (NullPointerException e) {
-                System.err.println(PID + " Не удалось обнаружить узел!");
+                logger.log(Level.SEVERE,PID + " Не удалось обнаружить узел!", e);
                 running.set(false);
             }
         }
     }
 
+    private boolean writeToConf(int cpuLoad, long totalMem, long freeMem) {
+        try {
+            if (!cfg.exists()) {
+                cfg.createNewFile();
+            }
+
+            Scanner fileScan = new Scanner(cfg);
+            List<String> fileStrArr = new LinkedList<>();
+            while (fileScan.hasNext()) {
+                fileStrArr.add(fileScan.nextLine());
+            }
+            while (fileStrArr.size() > 100) {
+                fileStrArr.remove(0);
+            }
+            fileScan.close();
+
+            fileStrArr.add(cpuLoad + ";" +
+                    totalMem + ";" +
+                    freeMem + ";" +
+                    String.valueOf((double)freeMem / totalMem * 100.0).substring(0, 5));
+
+
+            FileWriter fileWriter = new FileWriter(cfg, false);
+            fileWriter.write("");
+            for (String str : fileStrArr) {
+                fileWriter.write(str + "\r\n");
+            }
+            fileWriter.flush();
+            fileWriter.close();
+
+            return true;
+        } catch (IOException e) {
+            logger.log(Level.SEVERE, "Can't get access to sysload file", e);
+            return false;
+        }
+    }
 }
