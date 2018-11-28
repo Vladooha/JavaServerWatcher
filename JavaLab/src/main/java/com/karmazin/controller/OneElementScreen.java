@@ -30,7 +30,6 @@ public class OneElementScreen {
 
     @FXML
     void initialize() {
-
     }
 
     public void setupWindow(Node node) {

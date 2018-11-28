@@ -1,0 +1,86 @@
+[01:30:28] {INFO} com.karmazin.model.LoggerAPI.log: Program started!
+[01:30:28] {INFO} com.karmazin.model.LoggerAPI.log: .ini-file created
+[01:30:28] {INFO} com.karmazin.model.LoggerAPI.log: Logging by saved data...
+[01:30:29] {INFO} com.karmazin.model.LoggerAPI.log: Attemption to initialize UserDB tables
+[01:30:29] {INFO} com.karmazin.model.LoggerAPI.log: Attempt to read UserDB record
+[01:30:29] {INFO} com.karmazin.model.LoggerAPI.log: User succefully logged in
+[01:30:29] {INFO} com.karmazin.model.LoggerAPI.log: Creating a work screen...
+[01:30:30] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for with sleep 0: Thread[Thread-5,5,main]
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab vk.com
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [vk.com] geolocation...
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [vk.com] started!
+[01:30:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:34] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for vk.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-7,5,main]
+[01:30:34] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com was added!
+[01:30:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:37] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab pornhub.com
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [pornhub.com] geolocation...
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [pornhub.com] started!
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for pornhub.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-9,5,main]
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: Server pornhub.com was added!
+[01:30:40] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:41] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:43] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:43] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:30:43] {INFO} com.karmazin.model.LoggerAPI.log: Deleting a server...
+[01:30:43] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com is deleting...
+[01:30:43] {INFO} com.karmazin.model.LoggerAPI.log: Deletion complited!
+[01:30:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:44] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:46] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:47] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:48] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:49] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:49] {SEVERE} com.karmazin.model.LoggerAPI.log: [pornhub.com] Can't get ping time
+[01:30:49] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:51] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:52] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:53] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:55] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:56] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:57] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:30:58] {SEVERE} com.karmazin.model.LoggerAPI.log: [pornhub.com] Can't get ping time
+[01:30:59] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:30:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:00] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:01] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:02] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:04] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:05] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:06] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:08] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com

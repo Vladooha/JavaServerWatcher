@@ -60,7 +60,7 @@ public class HttpWatcher {
 
     //TODO Config await time
     public Label httpCodeLabel(String IP, int delay) {
-        return httpCodeLabel(IP, delay, 5000);
+        return httpCodeLabel(IP, delay, 500);
     }
 
     public Label httpCodeLabel(String IP, int delay, int awaitTime) {
@@ -106,5 +106,5 @@ public class HttpWatcher {
         }
     }
 
-    synchronized public void shutdown() { isWorking = false; }
+    public void shutdown() { isWorking = false; }
 }

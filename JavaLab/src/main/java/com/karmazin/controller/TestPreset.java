@@ -28,6 +28,8 @@ public class TestPreset {
     private static Stage window;
     private static Scene scene;
 
+    private SelfTester selfTester = new SelfTester();
+
     @FXML
     private ResourceBundle resources;
 
@@ -63,7 +65,7 @@ public class TestPreset {
                         " windows with " + tabsCount + "tabs each");
 
                 new Thread(() -> {
-                    SelfTester.startTabsTest(windowsCount, tabsCount);
+                    selfTester.startTabsTest(windowsCount, tabsCount);
                 }).start();
             } catch (Exception e) {
             }

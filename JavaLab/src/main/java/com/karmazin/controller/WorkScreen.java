@@ -9,6 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.logging.Level;
 
 import com.karmazin.model.*;
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -19,6 +20,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.CategoryAxis;
@@ -30,6 +32,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class WorkScreen {
@@ -47,19 +50,10 @@ public class WorkScreen {
     private TabPane tabTabPanel;
 
     @FXML
-    private Button debugButton;
-
-    @FXML
-    private Button exitButton;
-
-    @FXML
     private Button delServerButton;
 
     @FXML
     private Button addServerButton;
-
-    @FXML
-    private Button selfTestButton;
 
     @FXML
     private TextField adressTextField;
@@ -73,15 +67,13 @@ public class WorkScreen {
     private Map<String, HttpWatcher> httpsMap = new HashMap<>();
     private final int delay = 400;
 
+    private static int tabCounter = 0;
+
     // Initialize JavaFX-method (invokes before setupWindow())
     @FXML
     void initialize() {
         // Start tab pre-set
-        Tab startTab = new Tab();
-        startTab.setText("Приветствую, " + ConfigAPI.getLogin());
-        HBox tabLayout = new HBox(new Label("Начальная вкладка, стоит ограничение на 1 сервер!"));
-        tabLayout.setAlignment(Pos.CENTER);
-        startTab.setContent(tabLayout);
+        Tab startTab = createMainTab();
         tabTabPanel.getTabs().add(startTab);
 
         //window = (Stage) addServerButton.getScene().getWindow();
@@ -91,6 +83,8 @@ public class WorkScreen {
 
         // 'Добавить сервер' button logic
         addServerButton.setOnAction(event -> {
+            tabCounter++;
+
             logger.log(Level.INFO, "Adding new server...");
 
             long timingBegin = 0, timingEnd = 0;
@@ -109,6 +103,8 @@ public class WorkScreen {
                         Tab newTab = new Tab();
                         newTab.setText(adressTextField.getText());
                         newTab.setContent(contentPanel(IP));
+                        newTab.setOnCloseRequest((closeEvent) -> delServerButton.fire());
+
                         tabTabPanel.getTabs().add(newTab);
                         tabTabPanel.getSelectionModel().select(newTab);
                     }
@@ -166,41 +162,6 @@ public class WorkScreen {
                 tabTabPanel.getTabs().remove(0);
             }
         });
-
-        // 'Выйти из аккаунта' button logic
-        exitButton.setOnAction(event -> {
-            ConfigAPI.unlogin();
-            exitPrep();
-
-            new LoginScreen().setupWindow(window);
-        });
-
-        // Developer's additional features
-        if (UserAPI.getStatus().equals(UserAPI.UserType.Developer)) {
-            // 'Debug' button logic
-            debugButton.setOnAction(event -> {
-                if (ConfigAPI.getDebug()) {
-                    logger.log(Level.INFO, "Debug enabled");
-                    ConfigAPI.setDebug(false);
-                    logger.muteMode(true);
-                } else {
-                    ConfigAPI.setDebug(true);
-                    logger.muteMode(false);
-                    logger.log(Level.INFO, "Debug disabled");
-                }
-            });
-
-            // 'Self tests' button logic
-            // TODO SelfTests
-            selfTestButton.setOnAction(event -> {
-                ConfigAPI.setSelfTest(true);
-
-                new TestPreset().setupWindow();
-            });
-        } else {
-            debugButton.setVisible(false);
-            selfTestButton.setVisible(false);
-        }
     }
 
     public void setupWindow(Stage primaryStage) throws IOException {
@@ -416,6 +377,112 @@ public class WorkScreen {
         }
 
         window.close();
+    }
+
+    private Tab createMainTab() {
+        Tab tab = new Tab();
+        tab.setText("Меню:");
+        VBox tabLayout = new VBox();
+        tabLayout.setPadding(new Insets(10));
+        tabLayout.setSpacing(20.0);
+        tabLayout.setAlignment(Pos.CENTER);
+
+        Button fileChooseButton = new Button("Загрузить файл с серверами");
+        fileChooseButton.setOnAction((event) -> {
+            File file = new FileChooser().showOpenDialog(window);
+
+            SimplePopup alert = new SimplePopup();
+
+//            new Thread(
+//                    () -> Platform.runLater(
+//                            () -> alert.setupWindow("Подождите, файл обрабатывается...\n" +
+//                    "(Мы не висим, просто JavaFX долго отрисовывает вкладки T_T)", false))).start();
+
+            new Thread(() -> {
+                try {
+                    Scanner scan = new Scanner(file);
+
+                    if (!scan.hasNext()) {
+                        throw new Exception();
+                    }
+
+                    while (scan.hasNext()) {
+                        String next = scan.nextLine();
+                        String adress = next.split("\\,")[1];
+                        Platform.runLater(() -> adressTextField.setText(adress));
+                        Platform.runLater(() -> addServerButton.fire());
+                        //Thread.sleep(100);
+                        System.err.println("I'm workin...");
+                    }
+
+                    Platform.runLater(() -> adressTextField.setText(""));
+                    Platform.runLater(() -> alert.close());
+                } catch (Exception e) {
+                    Platform.runLater(() -> alert.close());
+
+                    Platform.runLater(() ->
+                            alert.setupWindow("Ошибка при чтении файла!\nСкорее всего он имеет неверный формат."));
+                }
+            }).start();
+
+            alert.setupWindow("Подождите, файл обрабатывается...\n" +
+                    "(Мы не висим, просто JavaFX долго отрисовывает вкладки T_T)", false);
+
+
+        });
+
+        ObservableList<Node> childrens = tabLayout.getChildren();
+        childrens.add(new Label("Приветствую, " + ConfigAPI.getLogin()));
+        fileChooseButton.setMaxWidth(250.0);
+        fileChooseButton.setMinWidth(250.0);
+        childrens.add(fileChooseButton);
+
+        // Developer's additional features
+        if (UserAPI.getStatus().equals(UserAPI.UserType.Developer)) {
+            // 'Debug' button logic
+            Button debugButton = new Button("Отладка");
+            debugButton.setOnAction(event -> {
+                if (ConfigAPI.getDebug()) {
+                    logger.log(Level.INFO, "Debug enabled");
+                    ConfigAPI.setDebug(false);
+                    logger.muteMode(true);
+                } else {
+                    ConfigAPI.setDebug(true);
+                    logger.muteMode(false);
+                    logger.log(Level.INFO, "Debug disabled");
+                }
+            });
+            debugButton.setMaxWidth(250.0);
+            debugButton.setMinWidth(250.0);
+            childrens.add(debugButton);
+
+            // 'Self tests' button logic
+            Button selfTestButton = new Button("Тестирование");
+            selfTestButton.setOnAction(event -> {
+                ConfigAPI.setSelfTest(true);
+
+                new TestPreset().setupWindow();
+            });
+            selfTestButton.setMaxWidth(250.0);
+            selfTestButton.setMinWidth(250.0);
+            childrens.add(selfTestButton);
+        }
+
+        // 'Выйти из аккаунта' button logic
+        Button exitButton = new Button("Выйти из аккаунта");
+        exitButton.setOnAction(event -> {
+            ConfigAPI.unlogin();
+            exitPrep();
+
+            new LoginScreen().setupWindow(window);
+        });
+        exitButton.setMaxWidth(250.0);
+        exitButton.setMinWidth(250.0);
+        childrens.add(exitButton);
+
+        tab.setContent(tabLayout);
+
+        return tab;
     }
 
     // Test-methods

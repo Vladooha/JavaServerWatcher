@@ -1,0 +1,63 @@
+[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: Program started!
+[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: .ini-file created
+[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: Logging by saved data...
+[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Attemption to initialize UserDB tables
+[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Attempt to read UserDB record
+[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: User succefully logged in
+[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Creating a work screen...
+[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for with sleep 0: Thread[Thread-5,5,main]
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab vk.com
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [vk.com] geolocation...
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [vk.com] started!
+[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for vk.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-7,5,main]
+[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com was added!
+[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab pornhub.com
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [pornhub.com] geolocation...
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [pornhub.com] started!
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for pornhub.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-9,5,main]
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Server pornhub.com was added!
+[01:31:55] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:57] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:31:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:31:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:31:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:32:00] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Deleting a server...
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Server pornhub.com is deleting...
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Deletion complited!
+[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
+[01:32:01] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
+[01:32:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Deleting a server...
+[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com is deleting...
+[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Deletion complited!
