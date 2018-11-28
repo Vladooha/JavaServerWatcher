@@ -225,6 +225,8 @@ public class WorkScreen {
         window.show();
 
         isTest = false;
+
+        ProcessWatcher localWatch = new ProcessWatcher();
     }
 
     public void setupTestWindow(Stage primaryStage, List<String> adresses) {

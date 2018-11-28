@@ -43,10 +43,23 @@ public class SelfTester {
 
         logger.muteMode(true);
 
-        List<Long> midTime = new ArrayList<>();
+        Map<Integer, Long> midTime = new HashMap<>();
+        for (int i = 0; i < tabsCount.size(); ++i)
+            midTime.put(i, 0L);
+        //midTime.add(singleSetTabTest(windowsCount, tabsCount.get(i)));
+        for (int k = 0; k < 9; ++k) {
+            //List<Long> buff = new ArrayList<>();
+            for (int i = 0; i < tabsCount.size(); ++i) {
+                Long buff = midTime.get(i);
+                buff += singleSetTabTest(windowsCount, tabsCount.get(i));
+                midTime.put(i, buff);
+            }
+        }
 
-        for (int i = 0; i < tabsCount.size(); ++i) {
-            midTime.add(singleSetTabTest(windowsCount, tabsCount.get(i)));
+        for (int i = 0; i < tabsCount.size(); ++i){
+            Long buff = midTime.get(i);
+            buff /= 9;
+            midTime.put(i, buff);
         }
 
         if (chart == null) {
@@ -65,10 +78,12 @@ public class SelfTester {
         if (graphScreen != null) {
             Platform.runLater(() -> graphScreen.close());
         }
-
-        chart.addSeries("Windows: " + windowsCount +
+      
+        List<Long> buff = new ArrayList<Long>();
+        buff.addAll(midTime.values());
+	chart.addSeries("Windows: " + windowsCount +
                 ". Tabs: " + tabsCount.get(0) + " - " + tabsCount.get(tabsCount.size() - 1),
-                tabsCount, midTime);
+                tabsCount, buff);
 
         //new Thread(() -> new SwingWrapper(chart).displayChart()).start();
 
@@ -107,7 +122,6 @@ public class SelfTester {
 
             ExecutorService ex = Executors.newFixedThreadPool(windowsCount);
             List<Callable<Object>> tasks = new ArrayList<>();
-            long begin = System.currentTimeMillis();
             for (int i = 0; i < windowsCount; ++i) {
                 tasks.add(() -> {
                     /*
@@ -134,13 +148,14 @@ public class SelfTester {
                         serversMap.add(new ServerPingWatcher(adress, false));
                         httpsMap.add(new HttpWatcher());
 
-                        //serversMap.get(String.valueOf(j)).getTime();
-                        //httpsMap.get(String.valueOf(j)).httpCodeLabel(adress, 100);
+                        serversMap.get(j).getTime();
+                        httpsMap.get(j).httpCodeLabel(adress, 100);
                     }
 
                     return null;
                 });
             }
+            long begin = System.currentTimeMillis();
             ex.invokeAll(tasks);
             long end = System.currentTimeMillis();
             ex.shutdownNow();
