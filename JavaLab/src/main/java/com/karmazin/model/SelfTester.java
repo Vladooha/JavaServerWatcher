@@ -1,5 +1,8 @@
 package com.karmazin.model;
 
+import com.karmazin.controller.OneElementScreen;
+import javafx.application.Platform;
+import javafx.embed.swing.SwingNode;
 import org.knowm.xchart.*;
 import org.knowm.xchart.style.Styler;
 
@@ -15,6 +18,8 @@ import java.util.concurrent.Executors;
 
 public class SelfTester {
     private static LoggerAPI logger = new LoggerAPI(SelfTester.class.getName());
+    private static XYChart chart;
+    private static OneElementScreen graphScreen;
 
     public static boolean startTabsTest(int windowsCount, List<Integer> tabsCount) {
 
@@ -44,39 +49,52 @@ public class SelfTester {
             midTime.add(singleSetTabTest(windowsCount, tabsCount.get(i)));
         }
 
-        final XYChart chart = new XYChartBuilder()
-                .width(600)
-                .height(400)
-                .title("Test graph for " + windowsCount + " windows")
-                .xAxisTitle("Tabs count")
-                .yAxisTitle("Time (ms)")
-                .build();
+        if (chart == null) {
+            chart = new XYChartBuilder()
+                    .width(600)
+                    .height(400)
+                    .title("Test graph for " + windowsCount + " windows")
+                    .xAxisTitle("Tabs count")
+                    .yAxisTitle("Time (ms)")
+                    .build();
 
-        chart.getStyler().setLegendPosition(Styler.LegendPosition.OutsideE);
-        chart.getStyler().setDefaultSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Area);
+            chart.getStyler().setLegendPosition(Styler.LegendPosition.OutsideE);
+            chart.getStyler().setDefaultSeriesRenderStyle(XYSeries.XYSeriesRenderStyle.Area);
+        }
 
-        chart.addSeries("time = fun(tabs)", tabsCount, midTime);
+        if (graphScreen != null) {
+            Platform.runLater(() -> graphScreen.close());
+        }
+
+        chart.addSeries("Windows: " + windowsCount +
+                ". Tabs: " + tabsCount.get(0) + " - " + tabsCount.get(tabsCount.size() - 1),
+                tabsCount, midTime);
 
         //new Thread(() -> new SwingWrapper(chart).displayChart()).start();
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
 
-            @Override
-            public void run() {
-
-                // Create and set up the window.
-                JFrame frame = new JFrame("Advanced grapheeque");
-                frame.setLayout(new BorderLayout());
-                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-                // chart
-                JPanel chartPanel = new XChartPanel<XYChart>(chart);
-                frame.add(chartPanel, BorderLayout.CENTER);
-
-                // Display the window.
-                frame.pack();
-                frame.setVisible(true);
-            }
-        });
+        final SwingNode swingNode = new SwingNode();
+        graphScreen = new OneElementScreen();
+        swingNode.setContent(new XChartPanel<XYChart>(chart));
+        Platform.runLater(() -> graphScreen.setupWindow(swingNode));
+//            javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//
+//                @Override
+//                public void run() {
+//
+//                    // Create and set up the window.
+//                    JFrame frame = new JFrame("Advanced grapheeque");
+//                    frame.setLayout(new BorderLayout());
+//                    //frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+//
+//                    // chart
+//                    JPanel chartPanel = new XChartPanel<XYChart>(chart);
+//                    frame.add(chartPanel, BorderLayout.CENTER);
+//
+//                    // Display the window.
+//                    frame.pack();
+//                    frame.setVisible(true);
+//                }
+//            });
 
         logger.muteMode(false);
 

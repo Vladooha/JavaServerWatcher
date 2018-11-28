@@ -7,22 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c092310-faf7-41b0-8e48-f56c1ad11b3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/testPresetScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cache/userDB/userList.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cache/userDB/userList.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logs/log.txt.1" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/log.txt.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/log.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -241,69 +232,71 @@
     <session id="1343370145">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="2" />
-          <entry key="java" value="12" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="20" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="XML" value="3" />
+          <entry key="JAVA" value="20" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4227" />
+          <entry key="fxml" value="12" />
+          <entry key="java" value="5047" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4227" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="5047" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
+            <state relative-caret-position="1054">
+              <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
               <folding>
-                <element signature="e#3823#3824#0" expanded="true" />
-                <element signature="e#3861#3862#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="13" selection-end-line="34" selection-end-column="13" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="187" column="26" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#contentPanel#0;class#WorkScreen#0" />
@@ -313,22 +306,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+            <state relative-caret-position="392">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1250#1251#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-628">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -336,8 +321,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="17" column="81" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="81" />
+            <state relative-caret-position="289">
+              <caret line="47" column="53" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -355,7 +340,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="510">
               <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
             </state>
           </provider>
@@ -364,7 +349,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="1020">
               <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -396,8 +381,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/miet/mp35a/karmazin/ProcessData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/miet/mp35a/karmazin/ProcessList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miet/mp35a/karmazin/ProcessWatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miet/mp35a/karmazin/SendHTMLEmail.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/miet/mp35a/karmazin/ServerPingData.java" />
@@ -439,14 +422,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/testPresetScreen.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/oneElementWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" />
       </list>
     </option>
   </component>
@@ -484,22 +469,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
-              <item name="fxml" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
-              <item name="logs" type="1f31426a:PackageElementNode" />
+              <item name="Pingovsheque" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -586,12 +561,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
+      <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
-              <item name="Pingovsheque" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
+              <item name="fxml" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Pingovsheque" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Pingovsheque" type="616d4139:PackageViewModuleNode" />
+              <item name="logs" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -603,7 +588,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542150993953" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543428898732" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manifest" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -668,8 +653,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.23355705" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.24026845" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.27986577" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -678,13 +664,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32719547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4979757" weight="0.27620396" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731544" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020243" side_tool="true" weight="0.32508835" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5026846" side_tool="true" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32152975" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -764,14 +750,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -784,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3383">
           <caret line="202" column="51" selection-start-line="202" selection-start-column="51" selection-end-line="202" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,9 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -836,46 +808,10 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/testPresetScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="159" selection-start-line="9" selection-start-column="159" selection-end-line="9" selection-end-column="159" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="17" column="81" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-628">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -893,31 +829,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="187" column="26" selection-start-line="187" selection-start-column="26" selection-end-line="187" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#contentPanel#0;class#WorkScreen#0" />
-          </folding>
+        <state relative-caret-position="646">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
+        <state relative-caret-position="1972">
           <caret line="118" column="11" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
-          <folding>
-            <element signature="e#3823#3824#0" expanded="true" />
-            <element signature="e#3861#3862#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/testPresetScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="159" selection-start-line="9" selection-start-column="159" selection-end-line="9" selection-end-column="159" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="1020">
           <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -925,20 +868,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="543" column="6" selection-start-line="543" selection-start-column="6" selection-end-line="543" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="565" column="12" selection-start-line="565" selection-start-column="12" selection-end-line="565" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/embed/swing/SwingNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="226" column="27" lean-forward="true" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/oneElementScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+        <state relative-caret-position="1054">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+        <state relative-caret-position="245">
+          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#contentPanel#0;class#WorkScreen#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -50,6 +50,7 @@ public class SimplePopup {
             window.setScene(scene);
             window.setResizable(false);
             window.initModality(Modality.APPLICATION_MODAL);
+
             window.showAndWait();
 
             logger.log(Level.INFO, "Error popup: " + message);
