@@ -30,7 +30,7 @@ public class SelfTester {
         }
 
         public static void loadAlert() {
-            Platform.runLater(() -> alert.setupWindow("Тест вполняется, ожидайте...", false));
+            Platform.runLater(() -> alert.setupWindow("Тест выполняется, ожидайте...", false));
         }
 
         @Override

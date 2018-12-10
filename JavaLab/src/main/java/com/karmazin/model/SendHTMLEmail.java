@@ -36,7 +36,7 @@ public class SendHTMLEmail {
      *
      * @param email recipient email
      */
-    public void send(String email) throws AddressException, MessagingException {
+    public void send(String email, String theme, boolean withSyscfg) throws AddressException, MessagingException {
         // Step1
         System.out.println("Установка настроек почты...");
         mailServerProperties = System.getProperties();
@@ -51,40 +51,54 @@ public class SendHTMLEmail {
         generateMailMessage = new MimeMessage(getMailSession);
         generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
 
-        generateMailMessage.setSubject("У вас сервер упал :(");
+        generateMailMessage.setSubject(theme);
         // --------------------------------------------------------------------------------------------------
         // Content collector
         MimeMultipart multipart = new MimeMultipart("related");
 
-        // Adding page-proofs
         BodyPart messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setContent(emailContent(), "text/html;charset=UTF-8");
-        multipart.addBodyPart(messageBodyPart);
 
         // Adding picture with logo
-        messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("img/logo.png")));
-        messageBodyPart.setHeader("Content-ID", "<logo>");
-        multipart.addBodyPart(messageBodyPart);
+        if (withSyscfg) {
+            messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("src/main/resources/logs/sysload.cfg")));
+            messageBodyPart.setHeader("Content-ID", "<doc>");
+            multipart.addBodyPart(messageBodyPart);
 
-        // Adding picture from vk
-        messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("img/vk.png")));
-        messageBodyPart.setHeader("Content-ID", "<vk>");
-        multipart.addBodyPart(messageBodyPart);
+//            messageBodyPart = new MimeBodyPart();
+//            messageBodyPart.setContent("Прилагаем вложение с отчетом производительности системы", "text/html;charset=UTF-8");
+//            multipart.addBodyPart(messageBodyPart);
+        } else {
 
-        // Adding picture with map
-        messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("img/map.png")));
-        messageBodyPart.setHeader("Content-ID", "<map>");
-        multipart.addBodyPart(messageBodyPart);
+            // Adding page-proofs
+            messageBodyPart.setContent(emailContent(), "text/html;charset=UTF-8");
+            multipart.addBodyPart(messageBodyPart);
 
-        // Adding picture with plot
-        messageBodyPart = new MimeBodyPart();
-        messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("img/graph.png")));
-        messageBodyPart.setHeader("Content-ID", "<graph>");
-        multipart.addBodyPart(messageBodyPart);
+            // Adding picture with logo
+            messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("src/main/resources/pngs/PapichLogo.png")));
+            messageBodyPart.setHeader("Content-ID", "<logo>");
+            multipart.addBodyPart(messageBodyPart);
 
+
+            // Adding picture from vk
+            messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("src/main/resources/img/vk.png")));
+            messageBodyPart.setHeader("Content-ID", "<vk>");
+            multipart.addBodyPart(messageBodyPart);
+
+            // Adding picture with map
+            messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("src/main/resources/img/map.png")));
+            messageBodyPart.setHeader("Content-ID", "<map>");
+            multipart.addBodyPart(messageBodyPart);
+
+            // Adding picture with plot
+            messageBodyPart = new MimeBodyPart();
+            messageBodyPart.setDataHandler(new DataHandler(new FileDataSource("src/main/resources/img/graph.png")));
+            messageBodyPart.setHeader("Content-ID", "<graph>");
+            multipart.addBodyPart(messageBodyPart);
+        }
         // Adding everything in public container
         generateMailMessage.setContent(multipart);
         // --------------------------------------------------------------------------------------------------
@@ -109,7 +123,7 @@ public class SendHTMLEmail {
     private String emailContent() {
         String html = "";
         try {
-            byte[] encoded = Files.readAllBytes(Paths.get("src/letter.html"));
+            byte[] encoded = Files.readAllBytes(Paths.get("src/main/resources/img/letter.html"));
             html = new String(encoded, Charset.defaultCharset());
         } catch (IOException e) {
             System.err.println(e.getMessage());

@@ -1,63 +1,1620 @@
-[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: Program started!
-[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: .ini-file created
-[01:31:45] {INFO} com.karmazin.model.LoggerAPI.log: Logging by saved data...
-[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Attemption to initialize UserDB tables
-[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Attempt to read UserDB record
-[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: User succefully logged in
-[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: Creating a work screen...
-[01:31:46] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for with sleep 0: Thread[Thread-5,5,main]
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab vk.com
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [vk.com] geolocation...
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [vk.com] started!
-[01:31:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for vk.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-7,5,main]
-[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com was added!
-[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab pornhub.com
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [pornhub.com] geolocation...
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [pornhub.com] started!
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for pornhub.com: Sleep 400, byteSize 350 in Thread: Thread[Thread-9,5,main]
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: Server pornhub.com was added!
-[01:31:55] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
-[01:31:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
-[01:31:57] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
-[01:31:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
-[01:31:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
-[01:31:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:31:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
-[01:32:00] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Deleting a server...
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Server pornhub.com is deleting...
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: Deletion complited!
-[01:32:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pornhub.com
-[01:32:01] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pornhub.com
-[01:32:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
-[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Deleting a server...
-[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com is deleting...
-[01:32:05] {INFO} com.karmazin.model.LoggerAPI.log: Deletion complited!
+[17:03:09] {INFO} com.karmazin.model.LoggerAPI.log: Program started!
+[17:03:09] {INFO} com.karmazin.model.LoggerAPI.log: .ini-file created
+[17:03:09] {INFO} com.karmazin.model.LoggerAPI.log: Logging by saved data...
+[17:03:10] {INFO} com.karmazin.model.LoggerAPI.log: Attemption to initialize UserDB tables
+[17:03:10] {INFO} com.karmazin.model.LoggerAPI.log: Attempt to read UserDB record
+[17:03:10] {INFO} com.karmazin.model.LoggerAPI.log: User succefully logged in
+[17:03:10] {INFO} com.karmazin.model.LoggerAPI.log: Creating a work screen...
+[17:03:11] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for with sleep 400: Thread[Thread-5,5,main]
+[17:03:43] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:43] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab facebook.com
+[17:03:43] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [facebook.com] geolocation...
+[17:03:44] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:44] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [facebook.com] started!
+[17:03:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for facebook.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-9,5,main]
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Server facebook.com was added!
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab twitter.com
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [twitter.com] geolocation...
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [twitter.com] started!
+[17:03:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for twitter.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-11,5,main]
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: Server twitter.com was added!
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab google.com
+[17:03:46] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [google.com] geolocation...
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [google.com] started!
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for google.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-13,5,main]
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Server google.com was added!
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab youtube.com
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [youtube.com] geolocation...
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:47] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [youtube.com] started!
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for youtube.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-15,5,main]
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Server youtube.com was added!
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab instagram.com
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [instagram.com] geolocation...
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [instagram.com] started!
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for instagram.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-17,5,main]
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Server instagram.com was added!
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab linkedin.com
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [linkedin.com] geolocation...
+[17:03:48] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): youtube.com
+[17:03:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [linkedin.com] started!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for linkedin.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-19,5,main]
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Server linkedin.com was added!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wordpress.org
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wordpress.org] geolocation...
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wordpress.org] started!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wordpress.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-21,5,main]
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Server wordpress.org was added!
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab pinterest.com
+[17:03:49] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [pinterest.com] geolocation...
+[17:03:50] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [pinterest.com] started!
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for pinterest.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-23,5,main]
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Server pinterest.com was added!
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wikipedia.org
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wikipedia.org] geolocation...
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wikipedia.org] started!
+[17:03:50] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.com
+[17:03:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wikipedia.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-25,5,main]
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Server wikipedia.org was added!
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wordpress.com
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wordpress.com] geolocation...
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:51] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wordpress.com] started!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wordpress.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-27,5,main]
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Server wordpress.com was added!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab blogspot.com
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [blogspot.com] geolocation...
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [blogspot.com] started!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for blogspot.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-29,5,main]
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Server blogspot.com was added!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab apple.com
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [apple.com] geolocation...
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:52] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [apple.com] started!
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for apple.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-31,5,main]
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Server apple.com was added!
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab adobe.com
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [adobe.com] geolocation...
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:53] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [adobe.com] started!
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for adobe.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-33,5,main]
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Server adobe.com was added!
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab tumblr.com
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [tumblr.com] geolocation...
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [tumblr.com] started!
+[17:03:54] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for tumblr.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-35,5,main]
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Server tumblr.com was added!
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab youtu.be
+[17:03:54] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [youtu.be] geolocation...
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [youtu.be] started!
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for youtu.be: Sleep 400, byteSize 35 in Thread: Thread[Thread-37,5,main]
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Server youtu.be was added!
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab amazon.com
+[17:03:55] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [amazon.com] geolocation...
+[17:03:56] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:56] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [amazon.com] started!
+[17:03:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:03:57] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:03:57] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for amazon.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-39,5,main]
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Server amazon.com was added!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab goo.gl
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [goo.gl] geolocation...
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [goo.gl] started!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for goo.gl: Sleep 400, byteSize 35 in Thread: Thread[Thread-41,5,main]
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Server goo.gl was added!
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab vimeo.com
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [vimeo.com] geolocation...
+[17:03:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.org
+[17:03:58] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:03:58] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [vimeo.com] started!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for vimeo.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-43,5,main]
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Server vimeo.com was added!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab flickr.com
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [flickr.com] geolocation...
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:03:58] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:03:58] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:03:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): youtube.com
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vimeo.com
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:58] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [flickr.com] started!
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for flickr.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-45,5,main]
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Server flickr.com was added!
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab microsoft.com
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [microsoft.com] geolocation...
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:03:59] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [microsoft.com] started!
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: goo.gl
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for microsoft.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-47,5,main]
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Server microsoft.com was added!
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab yahoo.com
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [yahoo.com] geolocation...
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [yahoo.com] started!
+[17:04:00] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for yahoo.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-49,5,main]
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Server yahoo.com was added!
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab godaddy.com
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [godaddy.com] geolocation...
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [godaddy.com] started!
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for godaddy.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-51,5,main]
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Server godaddy.com was added!
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab qq.com
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [qq.com] geolocation...
+[17:04:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.com
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [qq.com] started!
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for qq.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-53,5,main]
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Server qq.com was added!
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab bit.ly
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [bit.ly] geolocation...
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:02] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [bit.ly] started!
+[17:04:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:04:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for bit.ly: Sleep 400, byteSize 35 in Thread: Thread[Thread-55,5,main]
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Server bit.ly was added!
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab vk.com
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [vk.com] geolocation...
+[17:04:04] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:04:04] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [vk.com] started!
+[17:04:04] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:04:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtu.be
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for vk.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-57,5,main]
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Server vk.com was added!
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab reddit.com
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [reddit.com] geolocation...
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [reddit.com] started!
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: tumblr.com
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for reddit.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-59,5,main]
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Server reddit.com was added!
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab w3.org
+[17:04:05] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [w3.org] geolocation...
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [w3.org] started!
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for w3.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-61,5,main]
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Server w3.org was added!
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab baidu.com
+[17:04:06] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [baidu.com] geolocation...
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [baidu.com] started!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for baidu.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-63,5,main]
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Server baidu.com was added!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab nytimes.com
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [nytimes.com] geolocation...
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [nytimes.com] started!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for nytimes.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-65,5,main]
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Server nytimes.com was added!
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab t.co
+[17:04:07] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [t.co] geolocation...
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [t.co] started!
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for t.co: Sleep 400, byteSize 35 in Thread: Thread[Thread-67,5,main]
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Server t.co was added!
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab europa.eu
+[17:04:08] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [europa.eu] geolocation...
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [europa.eu] started!
+[17:04:09] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.com
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for europa.eu: Sleep 400, byteSize 35 in Thread: Thread[Thread-69,5,main]
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Server europa.eu was added!
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab buydomains.com
+[17:04:09] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [buydomains.com] geolocation...
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [buydomains.com] started!
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for buydomains.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-71,5,main]
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Server buydomains.com was added!
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wp.com
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wp.com] geolocation...
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:10] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wp.com] started!
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wp.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-73,5,main]
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Server wp.com was added!
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab statcounter.com
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [statcounter.com] geolocation...
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [statcounter.com] started!
+[17:04:11] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for statcounter.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-75,5,main]
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Server statcounter.com was added!
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab miitbeian.gov.cn
+[17:04:11] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [miitbeian.gov.cn] geolocation...
+[17:04:12] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogspot.com
+[17:04:13] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogspot.com
+[17:04:13] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:04:13] {SEVERE} com.karmazin.model.LoggerAPI.log: [baidu.com] Can't get ping time
+[17:04:13] {SEVERE} com.karmazin.model.LoggerAPI.log: baidu.com timeout!
+[17:04:13] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:14] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:04:14] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:14] {SEVERE} com.karmazin.model.LoggerAPI.log: Статус запроса fail, invalid query
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Server miitbeian.gov.cn was added!
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab jimdo.com
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [jimdo.com] geolocation...
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: statcounter.com
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [jimdo.com] started!
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for jimdo.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-77,5,main]
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Server jimdo.com was added!
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab blogger.com
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [blogger.com] geolocation...
+[17:04:14] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): statcounter.com
+[17:04:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:04:14] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [blogger.com] started!
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for blogger.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-79,5,main]
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Server blogger.com was added!
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab github.com
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [github.com] geolocation...
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wp.com
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:15] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [github.com] started!
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for github.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-81,5,main]
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Server github.com was added!
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab weebly.com
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [weebly.com] geolocation...
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:16] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [weebly.com] started!
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for weebly.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-83,5,main]
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Server weebly.com was added!
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab soundcloud.com
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [soundcloud.com] geolocation...
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [soundcloud.com] started!
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for soundcloud.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-85,5,main]
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Server soundcloud.com was added!
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab mozilla.org
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [mozilla.org] geolocation...
+[17:04:17] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.com
+[17:04:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: buydomains.com
+[17:04:18] {SEVERE} com.karmazin.model.LoggerAPI.log: [vk.com] Can't get ping time
+[17:04:18] {SEVERE} com.karmazin.model.LoggerAPI.log: vk.com timeout!
+[17:04:18] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:18] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:18] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:18] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [mozilla.org] started!
+[17:04:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:04:18] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:19] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for mozilla.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-87,5,main]
+[17:04:19] {INFO} com.karmazin.model.LoggerAPI.log: Server mozilla.org was added!
+[17:04:19] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:19] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab bbc.co.uk
+[17:04:19] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [bbc.co.uk] geolocation...
+[17:04:19] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: europa.eu
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [bbc.co.uk] started!
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: t.co
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for bbc.co.uk: Sleep 400, byteSize 35 in Thread: Thread[Thread-89,5,main]
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Server bbc.co.uk was added!
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab yandex.ru
+[17:04:20] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [yandex.ru] geolocation...
+[17:04:21] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:04:21] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [yandex.ru] started!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:04:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for yandex.ru: Sleep 400, byteSize 35 in Thread: Thread[Thread-91,5,main]
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Server yandex.ru was added!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab myspace.com
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [myspace.com] geolocation...
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [myspace.com] started!
+[17:04:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nytimes.com
+[17:04:22] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for myspace.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-93,5,main]
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Server myspace.com was added!
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab google.de
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [google.de] geolocation...
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [google.de] started!
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for google.de: Sleep 400, byteSize 35 in Thread: Thread[Thread-95,5,main]
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Server google.de was added!
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab addthis.com
+[17:04:22] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [addthis.com] geolocation...
+[17:04:22] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: baidu.com
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [addthis.com] started!
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for addthis.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-97,5,main]
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Server addthis.com was added!
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab nih.gov
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [nih.gov] geolocation...
+[17:04:23] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:23] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): baidu.com
+[17:04:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: tumblr.com
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [nih.gov] started!
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for nih.gov: Sleep 400, byteSize 35 in Thread: Thread[Thread-99,5,main]
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Server nih.gov was added!
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab theguardian.com
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [theguardian.com] geolocation...
+[17:04:24] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:24] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: w3.org
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [theguardian.com] started!
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for theguardian.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-101,5,main]
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Server theguardian.com was added!
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab google.co.jp
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [google.co.jp] geolocation...
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:25] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [google.co.jp] started!
+[17:04:25] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for google.co.jp: Sleep 400, byteSize 35 in Thread: Thread[Thread-103,5,main]
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Server google.co.jp was added!
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab cnn.com
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [cnn.com] geolocation...
+[17:04:26] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:26] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [cnn.com] started!
+[17:04:27] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:04:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtu.be
+[17:04:27] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:27] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:04:27] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:04:27] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reddit.com
+[17:04:27] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for cnn.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-105,5,main]
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Server cnn.com was added!
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab stumbleupon.com
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [stumbleupon.com] geolocation...
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:28] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [stumbleupon.com] started!
+[17:04:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for stumbleupon.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-107,5,main]
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Server stumbleupon.com was added!
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab gravatar.com
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [gravatar.com] geolocation...
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [gravatar.com] started!
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for gravatar.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-109,5,main]
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Server gravatar.com was added!
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab digg.com
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [digg.com] geolocation...
+[17:04:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:29] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [digg.com] started!
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for digg.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-111,5,main]
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Server digg.com was added!
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab addtoany.com
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [addtoany.com] geolocation...
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [addtoany.com] started!
+[17:04:30] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): twitter.com
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.com
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for addtoany.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-113,5,main]
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Server addtoany.com was added!
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab creativecommons.org
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [creativecommons.org] geolocation...
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:30] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [creativecommons.org] started!
+[17:04:31] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bit.ly
+[17:04:31] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for creativecommons.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-115,5,main]
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: Server creativecommons.org was added!
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab paypal.com
+[17:04:31] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [paypal.com] geolocation...
+[17:04:32] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:32] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [paypal.com] started!
+[17:04:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for paypal.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-117,5,main]
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Server paypal.com was added!
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab yelp.com
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [yelp.com] geolocation...
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [yelp.com] started!
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for yelp.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-119,5,main]
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Server yelp.com was added!
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab imdb.com
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [imdb.com] geolocation...
+[17:04:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: qq.com
+[17:04:34] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:04:34] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:34] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): qq.com
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [imdb.com] started!
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for imdb.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-121,5,main]
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Server imdb.com was added!
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab huffingtonpost.com
+[17:04:34] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [huffingtonpost.com] geolocation...
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: goo.gl
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [huffingtonpost.com] started!
+[17:04:35] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:35] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for huffingtonpost.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-123,5,main]
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Server huffingtonpost.com was added!
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab feedburner.com
+[17:04:35] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [feedburner.com] geolocation...
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: godaddy.com
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [feedburner.com] started!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for feedburner.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-125,5,main]
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Server feedburner.com was added!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab issuu.com
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [issuu.com] geolocation...
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [issuu.com] started!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for issuu.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-127,5,main]
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Server issuu.com was added!
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wix.com
+[17:04:36] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wix.com] geolocation...
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wix.com] started!
+[17:04:37] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:37] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wix.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-129,5,main]
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Server wix.com was added!
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab dropbox.com
+[17:04:37] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [dropbox.com] geolocation...
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [dropbox.com] started!
+[17:04:38] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): godaddy.com
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.com
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for dropbox.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-131,5,main]
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Server dropbox.com was added!
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab forbes.com
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [forbes.com] geolocation...
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [forbes.com] started!
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for forbes.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-133,5,main]
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Server forbes.com was added!
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab amazonaws.com
+[17:04:38] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [amazonaws.com] geolocation...
+[17:04:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [amazonaws.com] started!
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for amazonaws.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-135,5,main]
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Server amazonaws.com was added!
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab google.co.uk
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [google.co.uk] geolocation...
+[17:04:39] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yahoo.com
+[17:04:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [google.co.uk] started!
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vimeo.com
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for google.co.uk: Sleep 400, byteSize 35 in Thread: Thread[Thread-137,5,main]
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Server google.co.uk was added!
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab washingtonpost.com
+[17:04:40] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [washingtonpost.com] geolocation...
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:04:41] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:04:41] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [washingtonpost.com] started!
+[17:04:41] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): youtube.com
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: microsoft.com
+[17:04:41] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for washingtonpost.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-139,5,main]
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Server washingtonpost.com was added!
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab bluehost.com
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [bluehost.com] geolocation...
+[17:04:41] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:41] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [bluehost.com] started!
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for bluehost.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-141,5,main]
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Server bluehost.com was added!
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab etsy.com
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [etsy.com] geolocation...
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [etsy.com] started!
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for etsy.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-143,5,main]
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Server etsy.com was added!
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab go.com
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [go.com] geolocation...
+[17:04:42] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): microsoft.com
+[17:04:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.org
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [go.com] started!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for go.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-145,5,main]
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Server go.com was added!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab msn.com
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [msn.com] geolocation...
+[17:04:43] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [msn.com] started!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: flickr.com
+[17:04:43] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for msn.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-147,5,main]
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Server msn.com was added!
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wsj.com
+[17:04:43] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wsj.com] geolocation...
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wsj.com] started!
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wsj.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-149,5,main]
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Server wsj.com was added!
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab ameblo.jp
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [ameblo.jp] geolocation...
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [ameblo.jp] started!
+[17:04:44] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): flickr.com
+[17:04:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: ameblo.jp
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for ameblo.jp: Sleep 400, byteSize 35 in Thread: Thread[Thread-151,5,main]
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Server ameblo.jp was added!
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab archive.org
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [archive.org] geolocation...
+[17:04:45] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [archive.org] started!
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wsj.com
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for archive.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-153,5,main]
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Server archive.org was added!
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab slideshare.net
+[17:04:45] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [slideshare.net] geolocation...
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [slideshare.net] started!
+[17:04:46] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for slideshare.net: Sleep 400, byteSize 35 in Thread: Thread[Thread-155,5,main]
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Server slideshare.net was added!
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab e-recht24.de
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [e-recht24.de] geolocation...
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:46] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [e-recht24.de] started!
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for e-recht24.de: Sleep 400, byteSize 35 in Thread: Thread[Thread-157,5,main]
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Server e-recht24.de was added!
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab weibo.com
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [weibo.com] geolocation...
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [weibo.com] started!
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.org
+[17:04:47] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for weibo.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-159,5,main]
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Server weibo.com was added!
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab fc2.com
+[17:04:47] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [fc2.com] geolocation...
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: microsoft.com
+[17:04:48] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:04:48] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [fc2.com] started!
+[17:04:48] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for fc2.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-161,5,main]
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Server fc2.com was added!
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab eventbrite.com
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [eventbrite.com] geolocation...
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:48] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [eventbrite.com] started!
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for eventbrite.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-163,5,main]
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Server eventbrite.com was added!
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab parallels.com
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [parallels.com] geolocation...
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: msn.com
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:49] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [parallels.com] started!
+[17:04:49] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for parallels.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-165,5,main]
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Server parallels.com was added!
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab doubleclick.net
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [doubleclick.net] geolocation...
+[17:04:50] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [doubleclick.net] started!
+[17:04:50] {SEVERE} com.karmazin.model.LoggerAPI.log: [huffingtonpost.com] Can't get ping time
+[17:04:50] {SEVERE} com.karmazin.model.LoggerAPI.log: huffingtonpost.com timeout!
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for doubleclick.net: Sleep 400, byteSize 35 in Thread: Thread[Thread-167,5,main]
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Server doubleclick.net was added!
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab mail.ru
+[17:04:50] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [mail.ru] geolocation...
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [mail.ru] started!
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: go.com
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for mail.ru: Sleep 400, byteSize 35 in Thread: Thread[Thread-169,5,main]
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Server mail.ru was added!
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab sourceforge.net
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [sourceforge.net] geolocation...
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [sourceforge.net] started!
+[17:04:51] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): go.com
+[17:04:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: etsy.com
+[17:04:51] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for sourceforge.net: Sleep 400, byteSize 35 in Thread: Thread[Thread-171,5,main]
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Server sourceforge.net was added!
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab amazon.co.uk
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [amazon.co.uk] geolocation...
+[17:04:52] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:52] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [amazon.co.uk] started!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for amazon.co.uk: Sleep 400, byteSize 35 in Thread: Thread[Thread-173,5,main]
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Server amazon.co.uk was added!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab telegraph.co.uk
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [telegraph.co.uk] geolocation...
+[17:04:53] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): etsy.com
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [telegraph.co.uk] started!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for telegraph.co.uk: Sleep 400, byteSize 35 in Thread: Thread[Thread-175,5,main]
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Server telegraph.co.uk was added!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab ebay.com
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [ebay.com] geolocation...
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bluehost.com
+[17:04:53] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:04:53] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:53] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [ebay.com] started!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for ebay.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-177,5,main]
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Server ebay.com was added!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab amzn.to
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [amzn.to] geolocation...
+[17:04:54] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [amzn.to] started!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for amzn.to: Sleep 400, byteSize 35 in Thread: Thread[Thread-179,5,main]
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Server amzn.to was added!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab livejournal.com
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [livejournal.com] geolocation...
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:54] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [livejournal.com] started!
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for livejournal.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-181,5,main]
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Server livejournal.com was added!
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab 51.la
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [51.la] geolocation...
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:04:55] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): bluehost.com
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vimeo.com
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:55] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [51.la] started!
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: washingtonpost.com
+[17:04:56] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for 51.la: Sleep 400, byteSize 35 in Thread: Thread[Thread-183,5,main]
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Server 51.la was added!
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab free.fr
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [free.fr] geolocation...
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:56] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [free.fr] started!
+[17:04:56] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:04:56] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:04:57] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): washingtonpost.com
+[17:04:57] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for free.fr: Sleep 400, byteSize 35 in Thread: Thread[Thread-185,5,main]
+[17:04:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:04:58] {INFO} com.karmazin.model.LoggerAPI.log: Server free.fr was added!
+[17:04:58] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:58] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab yahoo.co.jp
+[17:04:58] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [yahoo.co.jp] geolocation...
+[17:04:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [yahoo.co.jp] started!
+[17:04:59] {SEVERE} com.karmazin.model.LoggerAPI.log: [ebay.com] Can't get ping time
+[17:04:59] {SEVERE} com.karmazin.model.LoggerAPI.log: ebay.com timeout!
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for yahoo.co.jp: Sleep 400, byteSize 35 in Thread: Thread[Thread-187,5,main]
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Server yahoo.co.jp was added!
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab dailymail.co.uk
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [dailymail.co.uk] geolocation...
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.com
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:04:59] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [dailymail.co.uk] started!
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for dailymail.co.uk: Sleep 400, byteSize 35 in Thread: Thread[Thread-189,5,main]
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Server dailymail.co.uk was added!
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab reuters.com
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [reuters.com] geolocation...
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [reuters.com] started!
+[17:05:00] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yahoo.com
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.uk
+[17:05:00] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for reuters.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-191,5,main]
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Server reuters.com was added!
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab taobao.com
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [taobao.com] geolocation...
+[17:05:01] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazonaws.com
+[17:05:01] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:01] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [taobao.com] started!
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for taobao.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-193,5,main]
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Server taobao.com was added!
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab wikimedia.org
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [wikimedia.org] geolocation...
+[17:05:02] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): amazonaws.com
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: godaddy.com
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [wikimedia.org] started!
+[17:05:02] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:05:02] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for wikimedia.org: Sleep 400, byteSize 35 in Thread: Thread[Thread-195,5,main]
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Server wikimedia.org was added!
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab amazon.de
+[17:05:02] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [amazon.de] geolocation...
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [amazon.de] started!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for amazon.de: Sleep 400, byteSize 35 in Thread: Thread[Thread-197,5,main]
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Server amazon.de was added!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab typepad.com
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [typepad.com] geolocation...
+[17:05:03] {SEVERE} com.karmazin.model.LoggerAPI.log: [qq.com] Can't get ping time
+[17:05:03] {SEVERE} com.karmazin.model.LoggerAPI.log: qq.com timeout!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [typepad.com] started!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: forbes.com
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for typepad.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-199,5,main]
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Server typepad.com was added!
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab hatena.ne.jp
+[17:05:03] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [hatena.ne.jp] geolocation...
+[17:05:04] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:04] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [hatena.ne.jp] started!
+[17:05:04] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): forbes.com
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: dropbox.com
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for hatena.ne.jp: Sleep 400, byteSize 35 in Thread: Thread[Thread-201,5,main]
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Server hatena.ne.jp was added!
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab bloomberg.com
+[17:05:04] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [bloomberg.com] geolocation...
+[17:05:05] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:05] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [bloomberg.com] started!
+[17:05:06] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:05:06] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:05:06] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:05:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:06] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): dropbox.com
+[17:05:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wix.com
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for bloomberg.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-203,5,main]
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Server bloomberg.com was added!
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Adding new server...
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Generating view elements in tab elegantthemes.com
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Recieving server's [elegantthemes.com] geolocation...
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Geolocation recieved!
+[17:05:07] {INFO} com.karmazin.model.LoggerAPI.log: Http labler [elegantthemes.com] started!
+[17:05:08] {INFO} com.karmazin.model.LoggerAPI.log: New watcher for elegantthemes.com: Sleep 400, byteSize 35 in Thread: Thread[Thread-205,5,main]
+[17:05:08] {INFO} com.karmazin.model.LoggerAPI.log: Server elegantthemes.com was added!
+[17:05:08] {INFO} com.karmazin.model.LoggerAPI.log: Error popup: Подождите, файл обрабатывается...
+(JavaFX долго отрисовывает вкладки T_T)
+[17:05:08] {INFO} com.karmazin.model.LoggerAPI.log: Error popup: Подождите, файл обрабатывается...
+(JavaFX долго отрисовывает вкладки T_T)
+[17:05:08] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: issuu.com
+[17:05:09] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:09] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:10] {SEVERE} com.karmazin.model.LoggerAPI.log: [wikimedia.org] Can't get ping time
+[17:05:10] {SEVERE} com.karmazin.model.LoggerAPI.log: wikimedia.org timeout!
+[17:05:10] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:05:10] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: goo.gl
+[17:05:11] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: feedburner.com
+[17:05:11] {SEVERE} com.karmazin.model.LoggerAPI.log: [baidu.com] Can't get ping time
+[17:05:11] {SEVERE} com.karmazin.model.LoggerAPI.log: baidu.com timeout!
+[17:05:12] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:05:12] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:05:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:05:13] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: huffingtonpost.com
+[17:05:15] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: qq.com
+[17:05:15] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:15] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): qq.com
+[17:05:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: imdb.com
+[17:05:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bit.ly
+[17:05:20] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yelp.com
+[17:05:21] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:05:21] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:05:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:21] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yelp.com
+[17:05:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: paypal.com
+[17:05:23] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): paypal.com
+[17:05:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.com
+[17:05:24] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:05:25] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:26] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: creativecommons.org
+[17:05:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addtoany.com
+[17:05:28] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:05:28] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:05:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:05:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: digg.com
+[17:05:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:30] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[17:05:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: gravatar.com
+[17:05:32] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: stumbleupon.com
+[17:05:32] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reddit.com
+[17:05:33] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:05:33] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:05:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:33] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): reddit.com
+[17:05:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtu.be
+[17:05:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:05:35] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:05:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: w3.org
+[17:05:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: cnn.com
+[17:05:37] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.jp
+[17:05:38] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.co.jp
+[17:05:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: tumblr.com
+[17:05:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:39] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:05:39] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:05:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: theguardian.com
+[17:05:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: baidu.com
+[17:05:40] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): baidu.com
+[17:05:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nih.gov
+[17:05:41] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nytimes.com
+[17:05:43] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addthis.com
+[17:05:43] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:44] {SEVERE} com.karmazin.model.LoggerAPI.log: [vk.com] Can't get ping time
+[17:05:44] {SEVERE} com.karmazin.model.LoggerAPI.log: vk.com timeout!
+[17:05:44] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:05:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.de
+[17:05:45] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:45] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:45] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.de
+[17:05:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:05:46] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:05:46] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:05:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: myspace.com
+[17:05:47] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): myspace.com
+[17:05:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: t.co
+[17:05:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yandex.ru
+[17:05:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: europa.eu
+[17:05:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:05:49] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:49] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:50] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:05:50] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:05:50] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:05:50] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:05:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bbc.co.uk
+[17:05:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: buydomains.com
+[17:05:51] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:05:51] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:05:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:05:51] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:52] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.com
+[17:05:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mozilla.org
+[17:05:52] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:05:52] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:05:53] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wp.com
+[17:05:54] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: soundcloud.com
+[17:05:55] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weebly.com
+[17:05:56] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): weebly.com
+[17:05:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:05:56] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:57] {SEVERE} com.karmazin.model.LoggerAPI.log: [godaddy.com] Can't get ping time
+[17:05:57] {SEVERE} com.karmazin.model.LoggerAPI.log: godaddy.com timeout!
+[17:05:57] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:05:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: github.com
+[17:05:57] {SEVERE} com.karmazin.model.LoggerAPI.log: [ebay.com] Can't get ping time
+[17:05:57] {SEVERE} com.karmazin.model.LoggerAPI.log: ebay.com timeout!
+[17:05:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: statcounter.com
+[17:05:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:58] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:05:58] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:05:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): statcounter.com
+[17:05:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogger.com
+[17:05:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:05:59] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogger.com
+[17:05:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:06:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: jimdo.com
+[17:06:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogspot.com
+[17:06:01] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:01] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:02] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogspot.com
+[17:06:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: jimdo.com
+[17:06:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:06:04] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogger.com
+[17:06:04] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:06:04] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:06:05] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogger.com
+[17:06:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: statcounter.com
+[17:06:05] {SEVERE} com.karmazin.model.LoggerAPI.log: [google.de] Can't get ping time
+[17:06:05] {SEVERE} com.karmazin.model.LoggerAPI.log: google.de timeout!
+[17:06:05] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:05] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): statcounter.com
+[17:06:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: github.com
+[17:06:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:06:06] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:06:06] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:06:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weebly.com
+[17:06:07] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): weebly.com
+[17:06:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: soundcloud.com
+[17:06:08] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wp.com
+[17:06:08] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:09] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mozilla.org
+[17:06:10] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:10] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:06:11] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:11] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: buydomains.com
+[17:06:11] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bbc.co.uk
+[17:06:12] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:06:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: europa.eu
+[17:06:14] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yandex.ru
+[17:06:14] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: t.co
+[17:06:15] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:06:15] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:06:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: myspace.com
+[17:06:16] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): myspace.com
+[17:06:16] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:06:17] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): wordpress.com
+[17:06:17] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.de
+[17:06:17] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:18] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.de
+[17:06:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addthis.com
+[17:06:19] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nytimes.com
+[17:06:20] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nih.gov
+[17:06:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: baidu.com
+[17:06:22] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): baidu.com
+[17:06:22] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: theguardian.com
+[17:06:23] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:06:23] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:06:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: tumblr.com
+[17:06:23] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:24] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:24] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): tumblr.com
+[17:06:25] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.jp
+[17:06:25] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:25] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.co.jp
+[17:06:25] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: cnn.com
+[17:06:26] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:26] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: w3.org
+[17:06:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:06:28] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:06:28] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:06:28] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:28] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:06:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtu.be
+[17:06:29] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reddit.com
+[17:06:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:30] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:30] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): reddit.com
+[17:06:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: stumbleupon.com
+[17:06:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: gravatar.com
+[17:06:31] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:32] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[17:06:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:33] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:06:33] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:06:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: digg.com
+[17:06:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:06:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addtoany.com
+[17:06:35] {SEVERE} com.karmazin.model.LoggerAPI.log: [baidu.com] Can't get ping time
+[17:06:35] {SEVERE} com.karmazin.model.LoggerAPI.log: baidu.com timeout!
+[17:06:35] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:35] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: creativecommons.org
+[17:06:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:06:35] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.com
+[17:06:37] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:37] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: paypal.com
+[17:06:38] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:39] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): paypal.com
+[17:06:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yelp.com
+[17:06:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:39] {SEVERE} com.karmazin.model.LoggerAPI.log: [jimdo.com] Can't get ping time
+[17:06:39] {SEVERE} com.karmazin.model.LoggerAPI.log: jimdo.com timeout!
+[17:06:39] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:40] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yelp.com
+[17:06:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bit.ly
+[17:06:41] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:41] {SEVERE} com.karmazin.model.LoggerAPI.log: [qq.com] Can't get ping time
+[17:06:41] {SEVERE} com.karmazin.model.LoggerAPI.log: qq.com timeout!
+[17:06:41] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:41] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:06:41] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:06:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:42] {SEVERE} com.karmazin.model.LoggerAPI.log: [ameblo.jp] Can't get ping time
+[17:06:42] {SEVERE} com.karmazin.model.LoggerAPI.log: ameblo.jp timeout!
+[17:06:42] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: imdb.com
+[17:06:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: qq.com
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): qq.com
+[17:06:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: huffingtonpost.com
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:06:45] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:06:46] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:06:46] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:06:46] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:06:47] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:06:47] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:06:47] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:47] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): pinterest.com
+[17:06:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: feedburner.com
+[17:06:48] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): feedburner.com
+[17:06:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: goo.gl
+[17:06:49] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:49] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: issuu.com
+[17:06:50] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wix.com
+[17:06:51] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:51] {SEVERE} com.karmazin.model.LoggerAPI.log: [vk.com] Can't get ping time
+[17:06:51] {SEVERE} com.karmazin.model.LoggerAPI.log: vk.com timeout!
+[17:06:51] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:06:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: elegantthemes.com
+[17:06:51] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: dropbox.com
+[17:06:52] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:06:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: forbes.com
+[17:06:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bloomberg.com
+[17:06:54] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:54] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: hatena.ne.jp
+[17:06:55] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): hatena.ne.jp
+[17:06:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: godaddy.com
+[17:06:56] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:57] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: typepad.com
+[17:06:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): typepad.com
+[17:06:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.de
+[17:06:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:06:59] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:06:59] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:07:00] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazonaws.com
+[17:07:00] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): amazonaws.com
+[17:07:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikimedia.org
+[17:07:01] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:07:01] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:07:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.uk
+[17:07:02] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:02] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.co.uk
+[17:07:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: taobao.com
+[17:07:03] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): taobao.com
+[17:07:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.com
+[17:07:03] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:04] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:05] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yahoo.com
+[17:07:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reuters.com
+[17:07:05] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:06] {SEVERE} com.karmazin.model.LoggerAPI.log: [goo.gl] Can't get ping time
+[17:07:06] {SEVERE} com.karmazin.model.LoggerAPI.log: goo.gl timeout!
+[17:07:06] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:07:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:07:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: dailymail.co.uk
+[17:07:08] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:08] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: washingtonpost.com
+[17:07:09] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:09] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): washingtonpost.com
+[17:07:09] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.co.jp
+[17:07:10] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:07:10] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:07:10] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:11] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bluehost.com
+[17:07:13] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:13] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:14] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): bluehost.com
+[17:07:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vimeo.com
+[17:07:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: free.fr
+[17:07:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: 51.la
+[17:07:16] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:16] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:17] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): 51.la
+[17:07:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: livejournal.com
+[17:07:17] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:07:17] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:07:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amzn.to
+[17:07:17] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:07:18] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): youtube.com
+[17:07:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: etsy.com
+[17:07:19] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:19] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): etsy.com
+[17:07:19] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: ebay.com
+[17:07:20] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: telegraph.co.uk
+[17:07:22] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:22] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.co.uk
+[17:07:22] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:07:22] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:07:22] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: go.com
+[17:07:24] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): go.com
+[17:07:24] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: msn.com
+[17:07:24] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:25] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: sourceforge.net
+[17:07:25] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:26] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mail.ru
+[17:07:26] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: doubleclick.net
+[17:07:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: microsoft.com
+[17:07:28] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:07:28] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:07:28] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:28] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:29] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: parallels.com
+[17:07:30] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:30] {SEVERE} com.karmazin.model.LoggerAPI.log: [feedburner.com] Can't get ping time
+[17:07:30] {SEVERE} com.karmazin.model.LoggerAPI.log: feedburner.com timeout!
+[17:07:30] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:07:31] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:31] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): parallels.com
+[17:07:31] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: eventbrite.com
+[17:07:32] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.org
+[17:07:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: fc2.com
+[17:07:34] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wsj.com
+[17:07:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weibo.com
+[17:07:36] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:07:36] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:07:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: e-recht24.de
+[17:07:38] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: ameblo.jp
+[17:07:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: slideshare.net
+[17:07:40] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:07:40] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:07:40] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:41] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): slideshare.net
+[17:07:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: flickr.com
+[17:07:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:42] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): flickr.com
+[17:07:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: archive.org
+[17:07:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: flickr.com
+[17:07:44] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:44] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:45] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): flickr.com
+[17:07:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: slideshare.net
+[17:07:46] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): slideshare.net
+[17:07:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: ameblo.jp
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: [ebay.com] Can't get ping time
+[17:07:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: e-recht24.de
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:47] {SEVERE} com.karmazin.model.LoggerAPI.log: [qq.com] Can't get ping time
+[17:07:49] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:50] {SEVERE} com.karmazin.model.LoggerAPI.log: qq.com timeout!
+[17:07:50] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:07:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weibo.com
+[17:07:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wsj.com
+[17:07:53] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:53] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:54] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:07:54] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:07:54] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: fc2.com
+[17:07:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.org
+[17:07:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: eventbrite.com
+[17:07:56] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:56] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:07:56] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:07:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: parallels.com
+[17:07:57] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:58] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): parallels.com
+[17:07:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: microsoft.com
+[17:07:59] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:07:59] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: doubleclick.net
+[17:08:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mail.ru
+[17:08:00] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: sourceforge.net
+[17:08:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: msn.com
+[17:08:02] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:02] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: go.com
+[17:08:03] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): go.com
+[17:08:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.co.uk
+[17:08:04] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: telegraph.co.uk
+[17:08:05] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: ebay.com
+[17:08:05] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:08:05] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:08:06] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: etsy.com
+[17:08:07] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): etsy.com
+[17:08:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtube.com
+[17:08:08] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): youtube.com
+[17:08:08] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amzn.to
+[17:08:08] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:08] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: 51.la
+[17:08:09] {SEVERE} com.karmazin.model.LoggerAPI.log: [vk.com] Can't get ping time
+[17:08:09] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:09] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): 51.la
+[17:08:11] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:11] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: livejournal.com
+[17:08:11] {SEVERE} com.karmazin.model.LoggerAPI.log: vk.com timeout!
+[17:08:11] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:08:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: free.fr
+[17:08:13] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:08:13] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:08:13] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vimeo.com
+[17:08:13] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bluehost.com
+[17:08:15] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:15] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): bluehost.com
+[17:08:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.co.jp
+[17:08:15] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: washingtonpost.com
+[17:08:19] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:19] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:08:19] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:08:19] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): washingtonpost.com
+[17:08:19] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: dailymail.co.uk
+[17:08:19] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:20] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: facebook.com
+[17:08:21] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:22] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reuters.com
+[17:08:22] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:08:22] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:08:23] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yahoo.com
+[17:08:23] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:25] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yahoo.com
+[17:08:25] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: taobao.com
+[17:08:26] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): taobao.com
+[17:08:26] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.uk
+[17:08:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikimedia.org
+[17:08:27] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:27] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazonaws.com
+[17:08:28] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): amazonaws.com
+[17:08:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:29] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.de
+[17:08:31] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: typepad.com
+[17:08:31] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:08:31] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:08:31] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): typepad.com
+[17:08:31] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: godaddy.com
+[17:08:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:33] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:33] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): godaddy.com
+[17:08:33] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: hatena.ne.jp
+[17:08:34] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): hatena.ne.jp
+[17:08:34] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bloomberg.com
+[17:08:35] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: forbes.com
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: dropbox.com
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:08:36] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:08:38] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): dropbox.com
+[17:08:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: elegantthemes.com
+[17:08:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wix.com
+[17:08:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: issuu.com
+[17:08:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:39] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:40] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): issuu.com
+[17:08:40] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: goo.gl
+[17:08:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: feedburner.com
+[17:08:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:42] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:42] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:08:42] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:08:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: pinterest.com
+[17:08:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: huffingtonpost.com
+[17:08:44] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:45] {SEVERE} com.karmazin.model.LoggerAPI.log: [ebay.com] Can't get ping time
+[17:08:45] {SEVERE} com.karmazin.model.LoggerAPI.log: ebay.com timeout!
+[17:08:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: qq.com
+[17:08:45] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:45] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): qq.com
+[17:08:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: imdb.com
+[17:08:47] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:47] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bit.ly
+[17:08:49] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:08:49] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:08:50] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yelp.com
+[17:08:51] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:51] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): yelp.com
+[17:08:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: paypal.com
+[17:08:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: amazon.com
+[17:08:54] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:08:54] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:08:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: twitter.com
+[17:08:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: creativecommons.org
+[17:08:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addtoany.com
+[17:08:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wikipedia.org
+[17:08:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: digg.com
+[17:08:58] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:08:58] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: vk.com
+[17:08:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: gravatar.com
+[17:09:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: reddit.com
+[17:09:02] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): reddit.com
+[17:09:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: stumbleupon.com
+[17:09:02] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: linkedin.com
+[17:09:03] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): linkedin.com
+[17:09:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: youtu.be
+[17:09:03] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: w3.org
+[17:09:04] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:09:04] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:05] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: cnn.com
+[17:09:06] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.co.jp
+[17:09:07] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: tumblr.com
+[17:09:09] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: theguardian.com
+[17:09:10] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: baidu.com
+[17:09:10] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): baidu.com
+[17:09:10] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nih.gov
+[17:09:11] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:12] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nytimes.com
+[17:09:13] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addthis.com
+[17:09:13] {SEVERE} com.karmazin.model.LoggerAPI.log: [addthis.com] Can't get ping time
+[17:09:13] {SEVERE} com.karmazin.model.LoggerAPI.log: addthis.com timeout!
+[17:09:14] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.de
+[17:09:15] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.de
+[17:09:15] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:09:16] {SEVERE} com.karmazin.model.LoggerAPI.log: [digg.com] Can't get ping time
+[17:09:16] {SEVERE} com.karmazin.model.LoggerAPI.log: digg.com timeout!
+[17:09:16] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: myspace.com
+[17:09:17] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): myspace.com
+[17:09:17] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: t.co
+[17:09:17] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:17] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): t.co
+[17:09:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yandex.ru
+[17:09:18] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: europa.eu
+[17:09:19] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:09:21] {SEVERE} com.karmazin.model.LoggerAPI.log: [issuu.com] Can't get ping time
+[17:09:21] {SEVERE} com.karmazin.model.LoggerAPI.log: issuu.com timeout!
+[17:09:21] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bbc.co.uk
+[17:09:22] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: buydomains.com
+[17:09:23] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:09:24] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mozilla.org
+[17:09:25] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wp.com
+[17:09:25] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:26] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weebly.com
+[17:09:27] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): weebly.com
+[17:09:27] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: soundcloud.com
+[17:09:28] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): soundcloud.com
+[17:09:28] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:09:28] {SEVERE} com.karmazin.model.LoggerAPI.log: [msn.com] Can't get ping time
+[17:09:28] {SEVERE} com.karmazin.model.LoggerAPI.log: msn.com timeout!
+[17:09:29] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: github.com
+[17:09:30] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: statcounter.com
+[17:09:30] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:31] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): statcounter.com
+[17:09:31] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogger.com
+[17:09:31] {SEVERE} com.karmazin.model.LoggerAPI.log: [tumblr.com] Can't get ping time
+[17:09:31] {SEVERE} com.karmazin.model.LoggerAPI.log: tumblr.com timeout!
+[17:09:32] {SEVERE} com.karmazin.model.LoggerAPI.log: [eventbrite.com] Can't get ping time
+[17:09:32] {SEVERE} com.karmazin.model.LoggerAPI.log: eventbrite.com timeout!
+[17:09:32] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogger.com
+[17:09:32] {SEVERE} com.karmazin.model.LoggerAPI.log: [adobe.com] Can't get ping time
+[17:09:32] {SEVERE} com.karmazin.model.LoggerAPI.log: [apple.com] Can't get ping time
+[17:09:35] {SEVERE} com.karmazin.model.LoggerAPI.log: [w3.org] Can't get ping time
+[17:09:36] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:09:36] {SEVERE} com.karmazin.model.LoggerAPI.log: adobe.com timeout!
+[17:09:36] {SEVERE} com.karmazin.model.LoggerAPI.log: apple.com timeout!
+[17:09:36] {SEVERE} com.karmazin.model.LoggerAPI.log: w3.org timeout!
+[17:09:36] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!
+[17:09:37] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogspot.com
+[17:09:38] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:38] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): blogspot.com
+[17:09:38] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: jimdo.com
+[17:09:39] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogspot.com
+[17:09:41] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: instagram.com
+[17:09:42] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: blogger.com
+[17:09:43] {SEVERE} com.karmazin.model.LoggerAPI.log: [microsoft.com] Can't get ping time
+[17:09:43] {SEVERE} com.karmazin.model.LoggerAPI.log: microsoft.com timeout!
+[17:09:43] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: statcounter.com
+[17:09:44] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): statcounter.com
+[17:09:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: github.com
+[17:09:44] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: apple.com
+[17:09:45] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: soundcloud.com
+[17:09:46] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: weebly.com
+[17:09:46] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): weebly.com
+[17:09:48] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wp.com
+[17:09:49] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: mozilla.org
+[17:09:51] {SEVERE} com.karmazin.model.LoggerAPI.log: [ebay.com] Can't get ping time
+[17:09:51] {SEVERE} com.karmazin.model.LoggerAPI.log: ebay.com timeout!
+[17:09:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.com
+[17:09:51] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.com
+[17:09:51] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: buydomains.com
+[17:09:52] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: bbc.co.uk
+[17:09:53] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: adobe.com
+[17:09:53] {SEVERE} com.karmazin.model.LoggerAPI.log: [reuters.com] Can't get ping time
+[17:09:53] {SEVERE} com.karmazin.model.LoggerAPI.log: reuters.com timeout!
+[17:09:55] {SEVERE} com.karmazin.model.LoggerAPI.log: [europa.eu] Can't get ping time
+[17:09:55] {SEVERE} com.karmazin.model.LoggerAPI.log: europa.eu timeout!
+[17:09:55] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:55] {SEVERE} com.karmazin.model.LoggerAPI.log: CPU critically loaded or not enough memory
+[17:09:55] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: europa.eu
+[17:09:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: t.co
+[17:09:56] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: yandex.ru
+[17:09:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: myspace.com
+[17:09:57] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): myspace.com
+[17:09:57] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: wordpress.com
+[17:09:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: google.de
+[17:09:59] {SEVERE} com.karmazin.model.LoggerAPI.log: I/O problem occured by adress (timeout probably): google.de
+[17:09:59] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: addthis.com
+[17:10:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nytimes.com
+[17:10:01] {SEVERE} com.karmazin.model.LoggerAPI.log: [weebly.com] Can't get ping time
+[17:10:01] {SEVERE} com.karmazin.model.LoggerAPI.log: weebly.com timeout!
+[17:10:01] {INFO} com.karmazin.model.LoggerAPI.log: New http url connection: nih.gov
+[17:10:03] {SEVERE} com.karmazin.model.LoggerAPI.log: [baidu.com] Can't get ping time
+[17:10:03] {SEVERE} com.karmazin.model.LoggerAPI.log: baidu.com timeout!
+[17:10:03] {INFO} com.karmazin.model.LoggerAPI.log: IT'S ALIVE!

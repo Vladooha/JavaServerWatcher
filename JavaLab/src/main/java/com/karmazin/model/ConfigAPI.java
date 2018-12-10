@@ -15,6 +15,7 @@ final public class ConfigAPI {
     private final static String userSettingsSection = "UserSettings";
     private final static String loginKey = "lastLogin";
     private final static String passKey = "lastPass";
+    private final static String emailKey = "lastEmail";
     private final static String debugKey = "debugMode";
     private final static String selfTestKey = "selfTestMode";
 
@@ -81,6 +82,15 @@ final public class ConfigAPI {
     public static void unlogin() {
         config.write(userSettingsSection, loginKey, "");
         config.write(userSettingsSection, passKey, "");
+    }
+
+    // Email data fields control
+    public static void setEmail(String option) {
+        config.write(userSettingsSection, emailKey, option);
+    }
+
+    public static String getEmail() {
+        return config.read(userSettingsSection, emailKey);
     }
 
     /// WindowSettings sector

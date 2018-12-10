@@ -51,6 +51,7 @@ public class LoginScreen extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         new LoginScreen().setupWindow(primaryStage);
     }
 

@@ -22,13 +22,18 @@ public class ProcessWatcher implements Runnable {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private int sleep;
 
+    private int loadedSession = 0;
+    private long time = 0;
+
     File cfg = new File("src" +
             File.separator + "main" +
             File.separator + "resources" +
             File.separator + "logs" +
             File.separator + "sysload.cfg");
 
-    public ProcessWatcher() {
+    public ProcessWatcher(int sleep) {
+        this.sleep = sleep;
+
         t = new Thread(this);
         logger.log(Level.INFO, "New watcher for with sleep " + sleep + ": " + t);
         t.start();
@@ -108,6 +113,40 @@ public class ProcessWatcher implements Runnable {
                     }
 
                     writeToConf(cpuLoad, totalMem, freeMem);
+                    //System.err.println("CPU load: " + cpuLoad);
+
+                    if (cpuLoad > 90 || (double)freeMem / totalMem < 0.05) {
+                        logger.log(Level.SEVERE, "CPU critically loaded or not enough memory");
+                        if (loadedSession > 10) {
+                            loadedSession = 0;
+
+                            //time = System.currentTimeMillis();
+
+                            //System.err.println("Gonna send email");
+
+                            if (System.currentTimeMillis() - time > 1200000) {
+
+                                time = System.currentTimeMillis();
+
+                                //System.err.println("Sending email...");
+                                try {
+                                    SendHTMLEmail email = new SendHTMLEmail("javaexamplesas", "Qwerty1337");
+                                    email.send(ConfigAPI.getEmail(),
+                                            "Ваш сервер сильно загружен!",
+                                            true);
+                                } catch (Exception e) {
+                                    logger.log(Level.SEVERE, "Email error: ", e);
+                                }
+                            }
+                        } else {
+                            //System.err.println("loaded: " + loadedSession);
+                            //time = System.currentTimeMillis();
+                            loadedSession++;
+                        }
+                    } else {
+                        //time = System.currentTimeMillis();
+                        loadedSession = 0;
+                    }
                 }
 
                 Thread.sleep(sleep);

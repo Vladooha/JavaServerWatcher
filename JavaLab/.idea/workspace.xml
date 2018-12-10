@@ -2,29 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f4d88c6-cb18-4f47-984b-833335ef2419" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/JavaLab.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--122.042,37.3928" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--122.391,37.7823" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--122.419,37.7749" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--71.1042,42.3647" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--71.2451,42.3986" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--73.6355,41.1909" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--75.1638,39.9523" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--77.0369,38.9072" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap--83.0235,39.9653" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-2.32142,48.8713" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-28.9784,41.0082" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-37.5883,55.734" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-4.35171,50.8503" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-4.89517,52.3702" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-4.9135,52.3556" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-8.68213,50.1109" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.temp/tempmap-9.18592,45.4654" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/logs/sysload.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logs/sysload.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/OneElementScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/OneElementScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/TestPreset.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/TestPreset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/LoginScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/LoginScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/PingAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/PingAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ProcessWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ProcessWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester$RunnableWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester$RunnableWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SendHTMLEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/SendHTMLEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ServerPingWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ServerPingWatcher.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/simplePopupScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/simplePopupScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/workScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/workScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logs/log.txt.1" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/log.txt.1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logs/sysload.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logs/sysload.cfg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,9 +91,38 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-547557880">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1636" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1636" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,10 +133,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1156">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="697">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,43 +153,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+            <state relative-caret-position="238">
+              <caret line="389" column="17" selection-start-line="389" selection-start-column="17" selection-end-line="389" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="-76">
+              <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="400">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
               <folding>
-                <element signature="e#1995#1996#0" expanded="true" />
-                <element signature="e#2025#2026#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -142,13 +186,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="201" column="29" selection-start-line="201" selection-start-column="29" selection-end-line="201" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ука</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -160,26 +236,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="400" />
-    <option name="y" value="55" />
-    <option name="width" value="1275" />
-    <option name="height" value="605" />
+    <option name="y" value="54" />
+    <option name="width" value="1276" />
+    <option name="height" value="606" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,10 +330,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543444330317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543500698583" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -270,8 +352,10 @@
   </component>
   <component name="RunManager">
     <configuration name="LoginScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.karmazin.controller.LoginScreen" />
-      <module name="JavaLab" />
+      <module name="Pingovsheque" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.karmazin.controller.*" />
@@ -327,28 +411,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1293" height="697" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.3286119" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
+      <window_info id="UI Designer" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.8091873" visible="true" weight="0.2574899" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Structure" order="5" sideWeight="0.19081272" side_tool="true" visible="true" weight="0.2574899" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32685512" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32685512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32685512" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32685512" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -356,6 +439,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.24966443" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -370,13 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -405,28 +483,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="201" column="29" selection-start-line="201" selection-start-column="29" selection-end-line="201" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
+        <state relative-caret-position="282">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#1995#1996#0" expanded="true" />
-            <element signature="e#2025#2026#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -437,35 +506,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="697">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="1428">
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="901">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="137" column="49" lean-forward="true" selection-start-line="137" selection-start-column="49" selection-end-line="137" selection-end-column="49" />
+        <state relative-caret-position="238">
+          <caret line="389" column="17" selection-start-line="389" selection-start-column="17" selection-end-line="389" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="108" column="39" selection-start-line="108" selection-start-column="39" selection-end-line="108" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="95" column="21" lean-forward="true" selection-start-line="95" selection-start-column="21" selection-end-line="95" selection-end-column="21" />
         </state>
       </provider>
     </entry>

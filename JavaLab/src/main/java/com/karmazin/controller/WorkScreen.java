@@ -29,9 +29,8 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Paint;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -187,7 +186,8 @@ public class WorkScreen {
 
         isTest = false;
 
-        ProcessWatcher localWatch = new ProcessWatcher();
+        ProcessWatcher localWatch = new ProcessWatcher(delay);
+        new Thread(localWatch).start();
     }
 
     public void setupTestWindow(Stage primaryStage, List<String> adresses) {
@@ -292,7 +292,7 @@ public class WorkScreen {
         chart.setLegendVisible(false);
 
         // TODO Add byte size to config
-        serversMap.put(IP, new ServerPingWatcher(IP, delay, 350));
+        serversMap.put(IP, new ServerPingWatcher(IP, delay, 35));
 
         // creating task for update values
         Task<Date> task = new Task<Date>() {
@@ -382,7 +382,13 @@ public class WorkScreen {
     private Tab createMainTab() {
         Tab tab = new Tab();
         tab.setText("Меню:");
+        tab.setClosable(false);
+
         VBox tabLayout = new VBox();
+        tabLayout.setBackground(Background.EMPTY);
+        tabLayout.setStyle("-fx-background-color:rgba(255, 255, 255, 1);");
+        // TODO Perfect menu background
+        //tabLayout.setBackground(new Background(new BackgroundImage()));
         tabLayout.setPadding(new Insets(10));
         tabLayout.setSpacing(20.0);
         tabLayout.setAlignment(Pos.CENTER);
@@ -412,7 +418,6 @@ public class WorkScreen {
                         Platform.runLater(() -> adressTextField.setText(adress));
                         Platform.runLater(() -> addServerButton.fire());
                         //Thread.sleep(100);
-                        System.err.println("I'm workin...");
                     }
 
                     Platform.runLater(() -> adressTextField.setText(""));
@@ -426,7 +431,7 @@ public class WorkScreen {
             }).start();
 
             alert.setupWindow("Подождите, файл обрабатывается...\n" +
-                    "(Мы не висим, просто JavaFX долго отрисовывает вкладки T_T)", false);
+                    "(JavaFX долго отрисовывает вкладки T_T)", false);
 
 
         });
@@ -467,6 +472,22 @@ public class WorkScreen {
             selfTestButton.setMinWidth(250.0);
             childrens.add(selfTestButton);
         }
+
+        HBox hbox = new HBox();
+        TextField emailTextField = new TextField(
+                ConfigAPI.getEmail().length() > 1 ?
+                        ConfigAPI.getEmail() :
+                        "Укажите ваш e-mail");
+        Button addEmailButton = new Button("Подтвердить");
+        addEmailButton.setOnAction((event) -> {
+            ConfigAPI.setEmail(emailTextField.getText());
+        });
+        hbox.getChildren().add(emailTextField);
+        hbox.getChildren().add(addEmailButton);
+        hbox.setSpacing(5.0);
+        hbox.setMaxWidth(250.0);
+        hbox.setMinWidth(250.0);
+        childrens.add(hbox);
 
         // 'Выйти из аккаунта' button logic
         Button exitButton = new Button("Выйти из аккаунта");

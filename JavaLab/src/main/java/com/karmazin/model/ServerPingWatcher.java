@@ -66,16 +66,16 @@ public class ServerPingWatcher implements Runnable  {
                 time = new PingAPI(IP, byteSize).ping();
 
                 timeoutCounter = 0;
-                itsAlive = true;
 
                 pause(sleep);
+                itsAlive = true;
             } catch (IOException e) {
                 logger.log(Level.SEVERE,"Input/output stream error!");
                 shutdown();
             } catch (NullPointerException e) {
                 logger.log(Level.SEVERE,IP + " can't find an adress!");
                 shutdown();
-            } catch (ArrayIndexOutOfBoundsException e) {
+            } catch (Exception e) {
                 if (timeoutCounter++ > timeoutLimit) {
                     time = -1;
                 } else {
@@ -83,7 +83,16 @@ public class ServerPingWatcher implements Runnable  {
                     timeoutCounter = 0;
 
                     if (itsAlive) {
+                        logger.log(Level.INFO, "IT'S ALIVE!");
                         // TODO Get info and send email
+                        try {
+                            SendHTMLEmail email = new SendHTMLEmail("javaexamplesas", "Qwerty1337");
+                            email.send(ConfigAPI.getEmail(),
+                                    "Сервер '" + IP + "' упал",
+                                    false);
+                        } catch (Exception e1) {
+                            logger.log(Level.SEVERE, "Email error: ", e1);
+                        }
                     }
                     itsAlive = false;
 
