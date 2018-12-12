@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="765.0" minWidth="1154.0" prefHeight="782.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karmazin.controller.StatisticsScreen">
+	<children>
+		<SplitPane dividerPositions="0.08623548922056384" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="800.0" minWidth="1200.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="1200.0">
+			<items>
+				<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="65.0" minWidth="1200.0" prefHeight="65.0" prefWidth="1200.0">
+					<children>
+						<HBox alignment="TOP_CENTER" layoutX="-3.0" minHeight="65.0" minWidth="1200.0" prefHeight="65.0" prefWidth="1200.0" spacing="10.0">
+							<children>
+								<Label text="Статистика от">
+									<HBox.margin>
+										<Insets left="10.0" top="10.0" />
+									</HBox.margin>
+								</Label>
+								<DatePicker fx:id="statisticDatePickBegin" prefHeight="31.0" prefWidth="120.0">
+									<HBox.margin>
+										<Insets top="5.0" />
+									</HBox.margin>
+								</DatePicker>
+								<Label text="до">
+									<HBox.margin>
+										<Insets bottom="10.0" top="10.0" />
+									</HBox.margin>
+								</Label>
+								<DatePicker fx:id="statisticDatePickEnd" prefHeight="31.0" prefWidth="120.0">
+									<HBox.margin>
+										<Insets top="5.0" />
+									</HBox.margin>
+								</DatePicker>
+								<Button fx:id="statisticButtonOk" defaultButton="true" mnemonicParsing="false" text="Готово">
+									<HBox.margin>
+										<Insets bottom="5.0" left="15.0" right="5.0" top="5.0" />
+									</HBox.margin>
+								</Button>
+							</children>
+							<padding>
+								<Insets top="10.0" />
+							</padding>
+						</HBox>
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="statisticPaneGraph" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="376.0" minWidth="1200.0" prefHeight="376.0" prefWidth="1200.0">
+               <children>
+                  <ScrollPane fx:id="statisticScrollPane" blendMode="SRC_ATOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="719.0" prefWidth="1200.0" vbarPolicy="NEVER">
+                    <content>
+                      <AnchorPane fx:id="statisticScrollAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="740.0" prefWidth="1195.0">
+                           <children>
+                              <BarChart fx:id="statisticChartPercent" barGap="5.0" categoryGap="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="705.0" prefWidth="1200.0">
+                                <xAxis>
+                                  <CategoryAxis animated="false" prefHeight="31.0" prefWidth="1137.0" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis animated="false" label="Доля быстрых откликов" prefHeight="664.0" prefWidth="55.0" side="LEFT" />
+                                </yAxis>
+                              </BarChart>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+			</items>
+		</SplitPane>
+	</children>
+</Pane>

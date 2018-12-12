@@ -41,7 +41,7 @@ public class GeolocationAPI {
                     response.append(line);
                 }
                 GeolocationAPIData data = new GeolocationAPIData(response.toString());
-                System.out.println(data);
+                //System.out.println(data);
 
                 logger.log(Level.INFO,"Geolocation recieved!");
 

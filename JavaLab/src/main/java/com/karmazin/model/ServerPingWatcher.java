@@ -1,6 +1,7 @@
 package com.karmazin.model;
 
 import java.io.IOException;
+import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
 
@@ -13,6 +14,7 @@ public class ServerPingWatcher implements Runnable  {
     private static final LoggerAPI logger = new LoggerAPI(ServerPingWatcher.class.getName());
 
     private static int timeoutLimit;
+    private static int emailTimeLimit;
 
     private String IP;
     private Thread t;
@@ -24,10 +26,12 @@ public class ServerPingWatcher implements Runnable  {
     private boolean itsAlive;
     private int time;
     private int timeoutCounter;
+    private long lastEmailTime;
 
     static {
         // TODO Config timeout value
-        timeoutLimit = 50;
+        timeoutLimit = 20;
+        emailTimeLimit = 1200000;
     }
 
     public ServerPingWatcher(String IP, boolean startNow) {
@@ -50,6 +54,7 @@ public class ServerPingWatcher implements Runnable  {
 
         this.itsAlive = true;
         this.timeoutCounter = 0;
+        this.lastEmailTime = 0;
         this.t = new Thread(this);
 
         if (startNow) {
@@ -69,6 +74,7 @@ public class ServerPingWatcher implements Runnable  {
                 itsAlive = true;
 
                 pause(sleep);
+                LoggerAPI.pingLog(IP, time);
             } catch (IOException e) {
                 logger.log(Level.SEVERE,"Input/output stream error!");
                 shutdown();
@@ -76,14 +82,28 @@ public class ServerPingWatcher implements Runnable  {
                 logger.log(Level.SEVERE,IP + " can't find an adress!");
                 shutdown();
             } catch (ArrayIndexOutOfBoundsException e) {
+                logger.log(Level.SEVERE, IP + " unknown error");
+            } catch (TimeoutException e) {
+                time = 0;
+                LoggerAPI.pingLog(IP, time);
                 if (timeoutCounter++ > timeoutLimit) {
-                    time = -1;
-                } else {
                     logger.log(Level.SEVERE, IP + " timeout!");
                     timeoutCounter = 0;
 
                     if (itsAlive) {
-                        // TODO Get info and send email
+                        if (System.currentTimeMillis() - lastEmailTime > emailTimeLimit) {
+                            try {
+                                SendHTMLEmail email = new SendHTMLEmail("javaexamplesas", "Qwerty1337");
+                                email.serverFailureMessage(ConfigAPI.getEmail(),
+                                        "Сервер '" + IP + "' упал",
+                                        IP);
+
+                                lastEmailTime = System.currentTimeMillis();
+                            } catch (Exception e1) {
+                                logger.log(Level.SEVERE, "Email error: ", e1);
+                                e1.printStackTrace();
+                            }
+                        }
                     }
                     itsAlive = false;
 

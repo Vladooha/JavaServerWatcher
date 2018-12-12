@@ -22,13 +22,14 @@ public class ProcessWatcher implements Runnable {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private int sleep;
 
-    File cfg = new File("src" +
-            File.separator + "main" +
-            File.separator + "resources" +
-            File.separator + "logs" +
-            File.separator + "sysload.cfg");
+    private int loadedSession = 0;
+    private long time = 0;
 
-    public ProcessWatcher() {
+    File cfg = new File("./logs/sysload.cfg");
+
+    public ProcessWatcher(int sleep) {
+        this.sleep = sleep;
+
         t = new Thread(this);
         logger.log(Level.INFO, "New watcher for with sleep " + sleep + ": " + t);
         t.start();
@@ -40,7 +41,6 @@ public class ProcessWatcher implements Runnable {
         logger.log(Level.INFO, "New watcher for " + PID + ": with sleep " + sleep + ": " + t);
         t.start();
     }
-
     public ProcessWatcher(int PID, int sleep) {
         this.PID = PID;
         this.sleep = sleep;
@@ -58,7 +58,6 @@ public class ProcessWatcher implements Runnable {
             try {
                 /*
                 Process p = Runtime.getRuntime().exec("tasklist /V /FI \"PID eq " + PID + "\" /FO \"CSV\"");
-
                 try (BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()))) {
                     input.readLine();
                     System.out.println(new ProcessData(input.readLine()));
@@ -71,7 +70,7 @@ public class ProcessWatcher implements Runnable {
                 Thread.sleep(100);
 
                 try (BufferedReader inputCpu = new BufferedReader(new InputStreamReader(pCpu.getInputStream()));
-                        BufferedReader inputMem = new BufferedReader(new InputStreamReader(pMem.getInputStream()))) {
+                     BufferedReader inputMem = new BufferedReader(new InputStreamReader(pMem.getInputStream()))) {
                     String inputBuffer = "";
                     int cpuLoad;
                     long totalMem, freeMem;
@@ -108,11 +107,44 @@ public class ProcessWatcher implements Runnable {
                     }
 
                     writeToConf(cpuLoad, totalMem, freeMem);
+                    //System.err.println("CPU load: " + cpuLoad);
+
+                    if (cpuLoad > 90 || (double)freeMem / totalMem < 0.05) {
+                        logger.log(Level.SEVERE, "CPU critically loaded or not enough memory");
+                        if (loadedSession > 10) {
+                            loadedSession = 0;
+
+                            //time = System.currentTimeMillis();
+
+                            //System.err.println("Gonna send email");
+
+                            if (System.currentTimeMillis() - time > 1200000) {
+
+                                time = System.currentTimeMillis();
+
+                                //System.err.println("Sending email...");
+                                try {
+                                    SendHTMLEmail email = new SendHTMLEmail("javaexamplesas", "Qwerty1337");
+                                    email.localOverloadMessage(ConfigAPI.getEmail(),
+                                            "Ваш сервер сильно загружен!");
+                                } catch (Exception e) {
+                                    logger.log(Level.SEVERE, "Email error: ", e);
+                                }
+                            }
+                        } else {
+                            //System.err.println("loaded: " + loadedSession);
+                            //time = System.currentTimeMillis();
+                            loadedSession++;
+                        }
+                    } else {
+                        //time = System.currentTimeMillis();
+                        loadedSession = 0;
+                    }
                 }
 
                 Thread.sleep(sleep);
             } catch (InterruptedException e) {
-               logger.log(Level.SEVERE,PID + "Interrupted", e);
+                logger.log(Level.SEVERE,PID + "Interrupted", e);
                 running.set(false);
             } catch (IOException e) {
                 logger.log(Level.SEVERE,"Ошибка потока записи/вывода!", e);

@@ -1,36 +1,49 @@
 package com.karmazin.controller;
 
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Level;
 
 import com.karmazin.model.*;
+import com.sun.corba.se.spi.ior.Writeable;
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.SnapshotParameters;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.WritableImage;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Paint;
+import javafx.scene.text.Font;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
+import javax.imageio.ImageIO;
 
 public class WorkScreen {
     private static LoggerAPI logger = new LoggerAPI(WorkScreen.class.getName());
@@ -38,7 +51,6 @@ public class WorkScreen {
     private String xml;
 
     private boolean isTest;
-    private int testCapacity;
 
     private static Stage window;
     private Scene scene;
@@ -47,19 +59,10 @@ public class WorkScreen {
     private TabPane tabTabPanel;
 
     @FXML
-    private Button debugButton;
-
-    @FXML
-    private Button exitButton;
-
-    @FXML
     private Button delServerButton;
 
     @FXML
     private Button addServerButton;
-
-    @FXML
-    private Button selfTestButton;
 
     @FXML
     private TextField adressTextField;
@@ -68,20 +71,18 @@ public class WorkScreen {
     private static final YandexMapsAPI yandexMapsAPI = new YandexMapsAPI(400, 400);
 
     // Server ping variables
-    private ArrayList<Long> timers;
     private Map<String, ServerPingWatcher> serversMap = new HashMap<>();
     private Map<String, HttpWatcher> httpsMap = new HashMap<>();
+    private static Map<String, ServerDataContainer> serverDataMap = new HashMap<>();
     private final int delay = 400;
+
+    private static int tabCounter = 0;
 
     // Initialize JavaFX-method (invokes before setupWindow())
     @FXML
     void initialize() {
         // Start tab pre-set
-        Tab startTab = new Tab();
-        startTab.setText("Приветствую, " + ConfigAPI.getLogin());
-        HBox tabLayout = new HBox(new Label("Начальная вкладка, стоит ограничение на 1 сервер!"));
-        tabLayout.setAlignment(Pos.CENTER);
-        startTab.setContent(tabLayout);
+        Tab startTab = createMainTab();
         tabTabPanel.getTabs().add(startTab);
 
         //window = (Stage) addServerButton.getScene().getWindow();
@@ -91,6 +92,8 @@ public class WorkScreen {
 
         // 'Добавить сервер' button logic
         addServerButton.setOnAction(event -> {
+            tabCounter++;
+
             logger.log(Level.INFO, "Adding new server...");
 
             long timingBegin = 0, timingEnd = 0;
@@ -109,6 +112,8 @@ public class WorkScreen {
                         Tab newTab = new Tab();
                         newTab.setText(adressTextField.getText());
                         newTab.setContent(contentPanel(IP));
+                        newTab.setOnCloseRequest((closeEvent) -> delServerButton.fire());
+
                         tabTabPanel.getTabs().add(newTab);
                         tabTabPanel.getSelectionModel().select(newTab);
                     }
@@ -116,17 +121,10 @@ public class WorkScreen {
                     logger.log(Level.INFO, "Server " + adressTextField.getText() + " was added!");
                 } else {
                     // UserAPI hasn't permission to add server
-                   logger.log(Level.INFO, "User isn't authorized!");
+                    logger.log(Level.INFO, "User isn't authorized!");
                 }
             } else {
-               logger.log(Level.INFO, "Adress field is empty!");
-            }
-
-            if (isTest) {
-                timingEnd = System.currentTimeMillis();
-                if (timers.size() < testCapacity) {
-                    timers.add(timingEnd - timingBegin);
-                }
+                logger.log(Level.INFO, "Adress field is empty!");
             }
         });
 
@@ -166,41 +164,6 @@ public class WorkScreen {
                 tabTabPanel.getTabs().remove(0);
             }
         });
-
-        // 'Выйти из аккаунта' button logic
-        exitButton.setOnAction(event -> {
-            ConfigAPI.unlogin();
-            exitPrep();
-
-            new LoginScreen().setupWindow(window);
-        });
-
-        // Developer's additional features
-        if (UserAPI.getStatus().equals(UserAPI.UserType.Developer)) {
-            // 'Debug' button logic
-            debugButton.setOnAction(event -> {
-                if (ConfigAPI.getDebug()) {
-                    logger.log(Level.INFO, "Debug enabled");
-                    ConfigAPI.setDebug(false);
-                    logger.muteMode(true);
-                } else {
-                    ConfigAPI.setDebug(true);
-                    logger.muteMode(false);
-                    logger.log(Level.INFO, "Debug disabled");
-                }
-            });
-
-            // 'Self tests' button logic
-            // TODO SelfTests
-            selfTestButton.setOnAction(event -> {
-                ConfigAPI.setSelfTest(true);
-
-                new TestPreset().setupWindow();
-            });
-        } else {
-            debugButton.setVisible(false);
-            selfTestButton.setVisible(false);
-        }
     }
 
     public void setupWindow(Stage primaryStage) throws IOException {
@@ -214,6 +177,8 @@ public class WorkScreen {
 
         window = primaryStage;
         window.setTitle("Pingovshique ver.0.(0)2");
+        window.setWidth(ConfigAPI.getResolution().getValue());
+        window.setHeight(ConfigAPI.getResolution().getKey());
         window.setScene(scene);
         window.setResizable(true);
         window.setOnCloseRequest(event -> {
@@ -226,37 +191,154 @@ public class WorkScreen {
 
         isTest = false;
 
-        ProcessWatcher localWatch = new ProcessWatcher();
+        ProcessWatcher localWatch = new ProcessWatcher(delay);
+        new Thread(localWatch).start();
     }
-
-    public void setupTestWindow(Stage primaryStage, List<String> adresses) {
-        try {
-            logger.log(Level.INFO, "Creating a work screen...");
-
-            xml = "/fxml/workScreen.fxml";
-            FXMLLoader loader = new FXMLLoader();
-            Parent root = (Parent) loader.load(getClass().getResourceAsStream(xml));
-
-            scene = new Scene(root);
-
-            window = primaryStage;
-            window.setScene(scene);
-            window.setOnCloseRequest(event -> {
-                exitPrep();
-
-                System.exit(0);
-            });
-
-            isTest = true;
-            testCapacity = adresses.size();
-            timers = new ArrayList<Long>(testCapacity);
-        } catch (Exception e) {
-
-        }
+    public static ServerDataContainer getServerData(String IP) {
+        return serverDataMap.get(IP);
     }
-
-
     /// Help-methods
+    // Creating a main tab view
+    private Tab createMainTab() {
+        Tab tab = new Tab();
+        tab.setText("Меню:");
+        tab.setClosable(false);
+
+        VBox tabLayout = new VBox();
+        tabLayout.setBackground(Background.EMPTY);
+        tabLayout.setStyle("-fx-background-color:rgba(255, 255, 255, 1);");
+        // TODO Perfect menu background
+        //tabLayout.setBackground(new Background(new BackgroundImage()));
+        tabLayout.setPadding(new Insets(10));
+        tabLayout.setSpacing(20.0);
+        tabLayout.setAlignment(Pos.CENTER);
+
+        Button fileChooseButton = new Button("Загрузить файл с серверами");
+        fileChooseButton.setOnAction((event) -> {
+            File file = new FileChooser().showOpenDialog(window);
+
+            SimplePopup alert = new SimplePopup();
+
+//            new Thread(
+//                    () -> Platform.runLater(
+//                            () -> alert.setupWindow("Подождите, файл обрабатывается...\n" +
+//                    "(Мы не висим, просто JavaFX долго отрисовывает вкладки T_T)", false))).start();
+
+            new Thread(() -> {
+                try {
+                    Scanner scan = new Scanner(file);
+
+                    if (!scan.hasNext()) {
+                        throw new Exception();
+                    }
+
+                    while (scan.hasNext()) {
+                        String next = scan.nextLine();
+                        String adress = next.split("\\,")[1];
+                        Platform.runLater(() -> adressTextField.setText(adress));
+                        Platform.runLater(() -> addServerButton.fire());
+                        //Thread.sleep(100);
+                    }
+
+                    Platform.runLater(() -> adressTextField.setText(""));
+                    Platform.runLater(() -> alert.close());
+                } catch (Exception e) {
+                    Platform.runLater(() -> alert.close());
+
+                    Platform.runLater(() ->
+                            alert.setupWindow("Ошибка при чтении файла!\nСкорее всего он имеет неверный формат."));
+                }
+            }).start();
+
+            alert.setupWindow("Подождите, файл обрабатывается...\n" +
+                    "(JavaFX долго отрисовывает вкладки T_T)", false);
+
+
+        });
+
+        ObservableList<Node> childrens = tabLayout.getChildren();
+        childrens.add(new Label("Приветствую, " + ConfigAPI.getLogin()));
+        fileChooseButton.setMaxWidth(250.0);
+        fileChooseButton.setMinWidth(250.0);
+        childrens.add(fileChooseButton);
+
+        // Developer's additional features
+        if (UserAPI.getStatus().equals(UserAPI.UserType.Developer)) {
+            // 'Debug' button logic
+            Button debugButton = new Button("Отладка");
+            debugButton.setOnAction(event -> {
+                if (ConfigAPI.getDebug()) {
+                    logger.log(Level.INFO, "Debug enabled");
+                    ConfigAPI.setDebug(false);
+                    logger.muteMode(true);
+                } else {
+                    ConfigAPI.setDebug(true);
+                    logger.muteMode(false);
+                    logger.log(Level.INFO, "Debug disabled");
+                }
+            });
+            debugButton.setMaxWidth(250.0);
+            debugButton.setMinWidth(250.0);
+            childrens.add(debugButton);
+
+            // 'Self tests' button logic
+            Button selfTestButton = new Button("Тестирование");
+            selfTestButton.setOnAction(event -> {
+                ConfigAPI.setSelfTest(true);
+
+                new TestPreset().setupWindow();
+            });
+            selfTestButton.setMaxWidth(250.0);
+            selfTestButton.setMinWidth(250.0);
+            childrens.add(selfTestButton);
+        }
+
+        // Email adding box
+        HBox hbox = new HBox();
+        TextField emailTextField;
+        if (ConfigAPI.getEmail().length() > 1) {
+            emailTextField = new TextField(ConfigAPI.getEmail());
+        } else {
+            emailTextField = new TextField();
+            emailTextField.setPromptText("Укажите ваш e-mail");
+        }
+
+        Button addEmailButton = new Button("Подтвердить");
+        addEmailButton.setOnAction((event) -> {
+            ConfigAPI.setEmail(emailTextField.getText());
+        });
+        hbox.getChildren().add(emailTextField);
+        hbox.getChildren().add(addEmailButton);
+        hbox.setSpacing(5.0);
+        hbox.setMaxWidth(250.0);
+        hbox.setMinWidth(250.0);
+        childrens.add(hbox);
+
+        // 'Посмотреть статистику' button logic
+        Button statisticButton = new Button("Посмотреть статистику");
+        statisticButton.setOnAction(event -> {
+            new StatisticsScreen().setupWindow();
+        });
+        statisticButton.setMaxWidth(250.0);
+        statisticButton.setMinWidth(250.0);
+        childrens.add(statisticButton);
+
+        // 'Выйти из аккаунта' button logic
+        Button exitButton = new Button("Выйти из аккаунта");
+        exitButton.setOnAction(event -> {
+            ConfigAPI.unlogin();
+            exitPrep();
+
+            new LoginScreen().setupWindow(window);
+        });
+        exitButton.setMaxWidth(250.0);
+        exitButton.setMinWidth(250.0);
+        childrens.add(exitButton);
+
+        tab.setContent(tabLayout);
+
+        return tab;
+    }
 
     // Creates tab content
     private VBox contentPanel(String IP) {
@@ -271,10 +353,12 @@ public class WorkScreen {
             contentPanel.setBackground(Background.EMPTY);
 
             HBox infoPanel = new HBox();
+            infoPanel.setAlignment(Pos.CENTER);
             //infoPanel.setStyle("-fx-background-color: #FFFFFF");
             infoPanel.setSpacing(20);
 
             Label graphLabel = new Label(geoData.toString());
+            graphLabel.setFont(new Font("Arial", 25));
             //graphLabel.setPrefSize(200, 200);
             graphLabel.setAlignment(Pos.CENTER);
             graphLabel.setPadding(new Insets(10.0));
@@ -287,7 +371,7 @@ public class WorkScreen {
 
             VBox textVBox = new VBox();
             textVBox.setPrefSize(400, 200);
-            textVBox.setAlignment(Pos.CENTER);
+            textVBox.setAlignment(Pos.TOP_LEFT);
             textVBox.getChildren().add(graphLabel);
             textVBox.getChildren().add(httpLabel);
 
@@ -296,13 +380,15 @@ public class WorkScreen {
             infoPanel.getChildren().add(textVBox);
             infoPanel.getChildren().add(image);
 
-            contentPanel.getChildren().add(createChart(IP, delay));
+            LineChart chart = createChart(IP, delay);
+            contentPanel.getChildren().add(chart);
             contentPanel.getChildren().add(infoPanel);
+
+            serverDataMap.put(IP, new ServerDataContainer(image, chart, geoData.toString()));
         }
 
         return contentPanel;
     }
-
     // Creates a ping chart (part of tab content)
     // TODO Scroll
     private LineChart createChart(String IP, int delay) {
@@ -331,7 +417,7 @@ public class WorkScreen {
         chart.setLegendVisible(false);
 
         // TODO Add byte size to config
-        serversMap.put(IP, new ServerPingWatcher(IP, delay, 350));
+        serversMap.put(IP, new ServerPingWatcher(IP, delay, 35));
 
         // creating task for update values
         Task<Date> task = new Task<Date>() {
@@ -417,18 +503,4 @@ public class WorkScreen {
 
         window.close();
     }
-
-    // Test-methods
-    public List<Long> getTestResults() {
-        if (!isTest) {
-            return null;
-        } else {
-            if (timers.size() < testCapacity) {
-                return null;
-            } else {
-                return timers;
-            }
-        }
-    }
 }
-

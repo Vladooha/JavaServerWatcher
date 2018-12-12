@@ -1,5 +1,6 @@
 package com.karmazin.model;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.logging.*;
@@ -9,6 +10,9 @@ public class LoggerAPI {
     private static boolean unaccessibleLog;
     private static boolean muted;
 
+    private static Logger pingLogger;
+    private static Date loggerDate;
+
     static {
         // Global logger settings
         try {
@@ -16,7 +20,8 @@ public class LoggerAPI {
             LogManager.getLogManager().readConfiguration();
 
             // Log file format settings
-            fileHandler = new FileHandler("src/main/resources/logs/log.txt");
+            new File("./logs").mkdirs();
+            fileHandler = new FileHandler("./logs/log.txt");
             fileHandler.setFormatter(new Formatter() {
                 @Override
                 public String format(LogRecord record) {
@@ -41,6 +46,45 @@ public class LoggerAPI {
             // Can't configure log file
             unaccessibleLog = true;
         }
+    }
+
+    private static void setPingLogger() {
+        if (loggerDate == null || new Date().getDay() > loggerDate.getDay()) {
+            loggerDate = new Date();
+            String loggerName = "servLog_" +
+                    loggerDate.getDate() + "_" +
+                    (loggerDate.getMonth() + 1) + "_" +
+                    (loggerDate.getYear() + 1900);
+
+            pingLogger = Logger.getLogger(loggerName);
+
+            try {
+                // Log file format settings
+                new File("./logs").mkdirs();
+                Handler newFileHandler = new FileHandler("./logs/" + loggerName  + ".txt");
+                newFileHandler.setFormatter(new Formatter() {
+                    @Override
+                    public String format(LogRecord record) {
+                        Date time = new Date();
+                        time.setTime(record.getMillis());
+                        String result = String.format("[%02d:%02d:%02d]", time.getHours(), time.getMinutes(), time.getSeconds()) + " ";
+                        result += record.getMessage() + "\r\n";
+
+                        return result;
+                    }
+                });
+
+                pingLogger.addHandler(newFileHandler);
+            } catch (IOException e) {
+                // TODO It's were fine to add log message here, but it's log constructor =(
+                System.err.println("CAN'T CREATE PING LOG FILE!!!");
+            }
+        }
+    }
+
+    public static void pingLog(String serverName, int ping) {
+        setPingLogger();
+        pingLogger.log(Level.INFO, "|" + serverName + "|: " + ping);
     }
 
     private Logger logger;

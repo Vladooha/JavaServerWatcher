@@ -23,6 +23,7 @@ public class SimplePopup {
     private static Scene scene;
 
     private static String message;
+    private static boolean isButtonShows;
 
     @FXML
     private Label simplePopupMessageTextField;
@@ -34,12 +35,21 @@ public class SimplePopup {
     void initialize() {
         simplePopupMessageTextField.setText(message);
 
-        simplePopupOkButton.setOnAction(e -> window.close());
+        if (isButtonShows) {
+            simplePopupOkButton.setOnAction(e -> close());
+        } else {
+            simplePopupOkButton.setVisible(false);
+        }
     }
 
-    void setupWindow(String message) {
+    public void setupWindow(String message) {
+        setupWindow(message, true);
+    }
+
+    public void setupWindow(String message, boolean isButtonShows) {
         try {
-            this.message = message;
+            SimplePopup.message = message;
+            SimplePopup.isButtonShows = isButtonShows;
 
             xml = "/fxml/simplePopupScreen.fxml";
             FXMLLoader loader = new FXMLLoader();
@@ -57,5 +67,9 @@ public class SimplePopup {
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Can't host error message =(");
         }
+    }
+
+    public void close() {
+        window.close();
     }
 }

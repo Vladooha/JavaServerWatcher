@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaLab.jnlp">
+  <information>
+    <title>Pingovsheeque</title>
+    <vendor>com.karmazin</vendor>
+    <description>JavaLab</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaLab.jar" size="188139" download="eager" />
+    <jar href="libs\VectorGraphics2D-0.13.jar" size="94027" download="eager" />
+    <jar href="libs\activation-1.1.jar" size="62983" download="eager" />
+    <jar href="libs\annotations-16.0.3.jar" size="18587" download="eager" />
+    <jar href="libs\ini4j-0.5.1.jar" size="96879" download="eager" />
+    <jar href="libs\jcommon-1.0.24.jar" size="330507" download="eager" />
+    <jar href="libs\jfreechart-1.5.0.jar" size="1559088" download="eager" />
+    <jar href="libs\json-20180813.jar" size="64597" download="eager" />
+    <jar href="libs\mail-1.5.0-b01.jar" size="519087" download="eager" />
+    <jar href="libs\sqlite-jdbc-3.25.2.jar" size="7064881" download="eager" />
+    <jar href="libs\xchart-3.5.2.jar" size="265461" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="com.karmazin.controller.LoginScreen"  name="JavaLab" />
+  <update check="background"/>
+</jnlp>

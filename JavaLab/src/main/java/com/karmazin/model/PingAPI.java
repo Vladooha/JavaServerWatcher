@@ -3,6 +3,7 @@ package com.karmazin.model;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -62,7 +63,7 @@ public class PingAPI {
                         ", TTL = " + TTL;
     }
 
-    public int ping() throws IOException {
+    public int ping() throws IOException, TimeoutException {
         // TODO OS-independent Java ICMP-pinger
         time = -1;
 
@@ -84,7 +85,8 @@ public class PingAPI {
                 //logger.log(Level.INFO,"[" + IP + "] Ping time: " + time + " ms");
             } else {
                 logger.log(Level.SEVERE,"[" + IP + "] Can't get ping time");
-                time = -1;
+                time = 0;
+                throw new TimeoutException();
             }
 
             match = ttlPattern.matcher(data);
@@ -92,7 +94,7 @@ public class PingAPI {
                 String found = match.group();
                 TTL = Integer.parseInt(found.substring(4, found.length() - 1));
             } else {
-                TTL = -1;
+                TTL = 0;
             }
         }
 

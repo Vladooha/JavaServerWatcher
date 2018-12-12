@@ -7,6 +7,7 @@ import com.karmazin.model.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -82,8 +83,8 @@ public class LoginScreen extends Application {
             }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Program files is corrupted. Please, reinstall the app!", e);
-            System.exit(1337);
             e.printStackTrace();
+            System.exit(1337);
         }
     }
 

@@ -5,16 +5,15 @@ import javafx.util.Pair;
 import java.io.File;
 
 final public class ConfigAPI {
-    private static LoggerAPI logger = new LoggerAPI(ConfigAPI.class.getName());
-
     private static ConfigMaster config;
 
     // .ini file data
-    private final static String configAdress = "src/main/resources/config/config.ini";
+    private final static String configAdress = "./config/config.ini";
 
     private final static String userSettingsSection = "UserSettings";
     private final static String loginKey = "lastLogin";
     private final static String passKey = "lastPass";
+    private final static String emailKey = "lastEmail";
     private final static String debugKey = "debugMode";
     private final static String selfTestKey = "selfTestMode";
 
@@ -35,6 +34,7 @@ final public class ConfigAPI {
             // Writing 'userSettings' sector
             config.write(userSettingsSection, loginKey, "");
             config.write(userSettingsSection, passKey, "");
+            config.write(userSettingsSection, emailKey, "");
             config.write(userSettingsSection, debugKey, "false");
             config.write(userSettingsSection, selfTestKey, "false");
 
@@ -81,6 +81,15 @@ final public class ConfigAPI {
     public static void unlogin() {
         config.write(userSettingsSection, loginKey, "");
         config.write(userSettingsSection, passKey, "");
+    }
+
+    // Email data fields control
+    public static void setEmail(String option) {
+        config.write(userSettingsSection, emailKey, option);
+    }
+
+    public static String getEmail() {
+        return config.read(userSettingsSection, emailKey);
     }
 
     /// WindowSettings sector

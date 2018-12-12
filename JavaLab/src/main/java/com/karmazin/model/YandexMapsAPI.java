@@ -14,11 +14,6 @@ public class YandexMapsAPI {
     private int width;
     private int height;
 
-    public YandexMapsAPI() {
-        width = 400;
-        height = 400;
-    }
-
     public YandexMapsAPI(int width, int height) {
         // Max value is 650x450
         this.width = (width > 650) ? 650 : width;

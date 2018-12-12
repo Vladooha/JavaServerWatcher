@@ -50,7 +50,7 @@ public class ConfigMaster {
                 String result = iniRead.get(section, key);
                 return result;
             } catch (IOException e) {
-                logger.log(Level.WARNING, "Can't open config file!");
+                //logger.log(Level.WARNING, "Can't open config file!");
                 return null;
             }
         }
@@ -65,6 +65,7 @@ public class ConfigMaster {
                 return true;
             } else {
                 try {
+                    configFile.getParentFile().mkdirs();
                     configFile.createNewFile();
                     return true;
                 } catch (IOException e) {

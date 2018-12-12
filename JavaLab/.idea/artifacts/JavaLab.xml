@@ -1,0 +1,43 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JavaLab">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaLab</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.karmazin.controller.LoginScreen" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/main/resources/pngs/PapichLogo.png" />
+            <option name="macIcon" value="$PROJECT_DIR$/src/main/resources/pngs/PapichLogo.png" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/main/resources/pngs/PapichLogo.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="Pingovsheeque" />
+        <option name="vendor" value="com.karmazin" />
+        <option name="version" value="0.(0)3" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaLab.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/manifest/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="JavaLab" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="library" level="project" name="Maven: org.ini4j:ini4j:0.5.1" />
+        <element id="library" level="project" name="Maven: de.erichseifert.vectorgraphics2d:VectorGraphics2D:0.13" />
+        <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Maven: javax.mail:mail:1.5.0-b01" />
+        <element id="library" level="project" name="Maven: org.jetbrains:annotations:16.0.3" />
+        <element id="library" level="project" name="Maven: org.jfree:jcommon:1.0.24" />
+        <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.5.0" />
+        <element id="library" level="project" name="Maven: org.knowm.xchart:xchart:3.5.2" />
+        <element id="library" level="project" name="Maven: org.json:json:20180813" />
+        <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.25.2" />
+      </element>
+    </root>
+  </artifact>
+</component>

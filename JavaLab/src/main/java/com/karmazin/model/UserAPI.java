@@ -1,5 +1,7 @@
 package com.karmazin.model;
 
+import com.karmazin.controller.SimplePopup;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -36,7 +38,7 @@ public class UserAPI {
         }
 
         // Constants for work with file in DB
-        private static String DB_PATH = "src/main/resources/cache/userDB/userList.db";
+        private static String DB_PATH = "./userList.db";
         // Class-abstraction над БД
         private static SQLiteBaseAPI userDB;
 
@@ -159,6 +161,7 @@ public class UserAPI {
                 logger.log(Level.SEVERE, "Wrong SQL request", e);
                 e.printStackTrace();
 
+                new SimplePopup().setupWindow(e.getMessage());
                 return UserType.Unauthorized;
             }
         }
