@@ -1,6 +1,7 @@
 package com.karmazin.model;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.logging.*;
@@ -11,13 +12,13 @@ public class LoggerAPI {
     private static boolean muted;
 
     private static Logger pingLogger;
-    private static Date loggerDate;
+    private static Logger httpLogger;
 
     static {
         // Global logger settings
         try {
             // Read logger config file
-            LogManager.getLogManager().readConfiguration();
+            LogManager.getLogManager().readConfiguration(new FileInputStream("logger.properties"));
 
             // Log file format settings
             new File("./logs").mkdirs();
@@ -29,7 +30,6 @@ public class LoggerAPI {
                     time.setTime(record.getMillis());
                     String result = String.format("[%02d:%02d:%02d]", time.getHours(), time.getMinutes(), time.getSeconds()) + " ";
                     result += "{" + record.getLevel() + "} ";
-                    result += record.getSourceClassName() + "." + record.getSourceMethodName() + ": ";
                     result += record.getMessage() + "\r\n";
 
                     return result;
@@ -48,43 +48,60 @@ public class LoggerAPI {
         }
     }
 
-    private static void setPingLogger() {
-        if (loggerDate == null || new Date().getDay() > loggerDate.getDay()) {
-            loggerDate = new Date();
-            String loggerName = "servLog_" +
-                    loggerDate.getDate() + "_" +
-                    (loggerDate.getMonth() + 1) + "_" +
-                    (loggerDate.getYear() + 1900);
-
-            pingLogger = Logger.getLogger(loggerName);
-
-            try {
-                // Log file format settings
-                new File("./logs").mkdirs();
-                Handler newFileHandler = new FileHandler("./logs/" + loggerName  + ".txt");
-                newFileHandler.setFormatter(new Formatter() {
-                    @Override
-                    public String format(LogRecord record) {
-                        Date time = new Date();
-                        time.setTime(record.getMillis());
-                        String result = String.format("[%02d:%02d:%02d]", time.getHours(), time.getMinutes(), time.getSeconds()) + " ";
-                        result += record.getMessage() + "\r\n";
-
-                        return result;
-                    }
-                });
-
-                pingLogger.addHandler(newFileHandler);
-            } catch (IOException e) {
-                // TODO It's were fine to add log message here, but it's log constructor =(
-                System.err.println("CAN'T CREATE PING LOG FILE!!!");
-            }
+    public static void pingLog(String serverName, int ping) {
+        File pingLogFile = getCustomLogFile("serv");
+        if (!pingLogFile.exists() || pingLogger == null) {
+            pingLogger = Logger.getLogger(
+                    pingLogFile.getName());
+            pingLogger.addHandler(
+                    getCustomLogHandler(pingLogFile));
         }
+
+        pingLogger.log(Level.INFO, "|" + serverName + "|: " + ping);
     }
 
-    public static void pingLog(String serverName, int ping) {
-        setPingLogger();
-        pingLogger.log(Level.INFO, "|" + serverName + "|: " + ping);
+    public static void httpLog(String serverName, int ping) {
+        File httpLogFile = getCustomLogFile("http");
+        if (!httpLogFile.exists() || httpLogger == null) {
+            httpLogger = Logger.getLogger(
+                    httpLogFile.getName());
+            httpLogger.addHandler(
+                    getCustomLogHandler(httpLogFile));
+        }
+
+        httpLogger.log(Level.INFO, "|" + serverName + "|: " + ping);
+    }
+
+    private static File getCustomLogFile(String mode) {
+        Date loggerDate = new Date();
+        String loggerName = mode + "Log_" +
+                loggerDate.getDate() + "_" +
+                (loggerDate.getMonth() + 1) + "_" +
+                (loggerDate.getYear() + 1900);
+
+        return new File("./logs/" + loggerName  + ".txt");
+    }
+
+    private static Handler getCustomLogHandler(File customLogFile) {
+        try {
+            new File("./logs").mkdirs();
+            Handler newFileHandler = new FileHandler(customLogFile.getPath());
+            newFileHandler.setFormatter(new Formatter() {
+                @Override
+                public String format(LogRecord record) {
+                    Date time = new Date();
+                    time.setTime(record.getMillis());
+                    String result = String.format("[%02d:%02d:%02d]", time.getHours(), time.getMinutes(), time.getSeconds()) + " ";
+                    result += record.getMessage() + "\r\n";
+
+                    return result;
+                }
+            });
+
+            return newFileHandler;
+        } catch (IOException e) {
+            return null;
+        }
     }
 
     private Logger logger;
@@ -136,8 +153,8 @@ public class LoggerAPI {
             return false;
         }
 
-        if (ConfigAPI.getDebug()) {
-            logger.log(level, message, e);
+        if (ConfigWrapper.getDebug()) {
+            logger.log(level, logger.getName() + ": " + message, e);
             return true;
         } else {
             // Debug mode is off
@@ -151,8 +168,8 @@ public class LoggerAPI {
             return false;
         }
 
-        if (ConfigAPI.getDebug()) {
-            logger.log(level, message);
+        if (ConfigWrapper.getDebug()) {
+            logger.log(level, logger.getName() + ": " + message);
             return true;
         } else {
             // Debug mode is off

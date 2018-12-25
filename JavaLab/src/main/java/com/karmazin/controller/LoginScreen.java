@@ -7,7 +7,6 @@ import com.karmazin.model.*;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -43,7 +42,7 @@ public class LoginScreen extends Application {
 
         logger.log(Level.INFO, "Program started!");
 
-        ConfigAPI.createConfigFile();
+        ConfigWrapper.createConfigFile();
         logger.log(Level.INFO, ".ini-file created");
 
         // Starting JavaFX GUI
@@ -74,16 +73,19 @@ public class LoginScreen extends Application {
                 scene = new Scene(root);
 
                 window = primaryStage;
-                window.setTitle("Pingovshique ver.0.(0)2");
+                window.setTitle("Pingovsheeque");
                 window.setScene(scene);
                 window.setResizable(false);
+                window.setWidth(600);
+                window.setHeight(400);
+                window.setOnCloseRequest((event -> System.exit(0)));
                 window.show();
 
                 logger.log(Level.INFO, "Login screen created!");
             }
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Program files is corrupted. Please, reinstall the app!", e);
-            e.printStackTrace();
+            //e.printStackTrace();
             System.exit(1337);
         }
     }
@@ -100,10 +102,10 @@ public class LoginScreen extends Application {
                     if (UserAPI.logIn(login, pass)) {
                         new WorkScreen().setupWindow(window);
                     } else {
-                        new SimplePopup().setupWindow("Incorrect login data!");
+                        new SimplePopup().setupWindow("Нет аккаунта с таким логином/паролем!");
                     }
                 } else {
-                    new SimplePopup().setupWindow("Minimal length of login/password is 3 symbols!");
+                    new SimplePopup().setupWindow("Минимальная длина логина и пароля составляет 3 символа!");
                 }
             } catch (IOException e) {
                 logger.log(Level.SEVERE, "Program files is corrupted. Please, reinstall the app!", e);
@@ -120,10 +122,11 @@ public class LoginScreen extends Application {
                     if (UserAPI.createNewUser(login, pass, UserAPI.UserType.SimpleUser)) {
                         new WorkScreen().setupWindow(window);
                     } else {
-                        new SimplePopup().setupWindow("Can't create profile with this data!");
+                        new SimplePopup().setupWindow("Не удалось создать аккант с таким логином и паролем.\n" +
+                                "Попробуйте дургую комбинацию!");
                     }
                 } else {
-                    new SimplePopup().setupWindow("Minimal length of login/password is 3 symbols!");
+                    new SimplePopup().setupWindow("Минимальная длина логина и пароля составляет 3 символа!");
                 }
             } catch (IOException e) {
                logger.log(Level.SEVERE, "Program files is corrupted. Please, reinstall the app!", e);

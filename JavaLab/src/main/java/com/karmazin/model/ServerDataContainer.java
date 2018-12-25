@@ -1,15 +1,18 @@
 package com.karmazin.model;
 
+import com.sun.javafx.charts.Legend;
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.chart.LineChart;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -18,14 +21,20 @@ import java.util.logging.Level;
 public class ServerDataContainer {
     private static final LoggerAPI logger = new LoggerAPI(ServerDataContainer.class.getName());
 
+    public static int GRAPH_HEIGHT = 250;
+
     ImageView map;
     LineChart chart;
-    String geodata;
+    GeolocationAPI geodata;
 
-    public ServerDataContainer(ImageView _map, LineChart _chart, String _geodata) {
+    public ServerDataContainer(ImageView _map, LineChart _chart, GeolocationAPI _geodata) {
         map = _map;
         chart = _chart;
         geodata = _geodata;
+    }
+
+    public void updateGraph(LineChart newChart) {
+        chart = newChart;
     }
 
     public byte[] getMap() {
@@ -34,8 +43,14 @@ public class ServerDataContainer {
 
         Platform.runLater(() -> {
             try (ByteArrayOutputStream mapImageStream = new ByteArrayOutputStream()) {
-                BufferedImage mapImage = SwingFXUtils.fromFXImage(map.getImage(), null);
-                ImageIO.write(mapImage, "png", mapImageStream);
+                try {
+                    BufferedImage mapImage = SwingFXUtils.fromFXImage(map.getImage(), null);
+                    ImageIO.write(mapImage,"gif", mapImageStream);
+                } catch (IllegalArgumentException e) {
+                    File alertPng = new File("/pngs/alert-128.png");
+                    BufferedImage mapImage = ImageIO.read(alertPng);
+                    ImageIO.write(mapImage, "png", mapImageStream);
+                }
                 for (byte singleByte : mapImageStream.toByteArray()) {
                     byteList.add(singleByte);
                 }
@@ -67,10 +82,16 @@ public class ServerDataContainer {
 
         Platform.runLater(() -> {
             try (ByteArrayOutputStream chartImageStream = new ByteArrayOutputStream()) {
-                WritableImage writeableImage = new WritableImage(1200, 400);
+                WritableImage writeableImage = new WritableImage(ConfigWrapper.getResolution().getValue(), GRAPH_HEIGHT);
                 WritableImage chartWritableImage = chart.snapshot(new SnapshotParameters(), writeableImage);
-                BufferedImage chartImage = SwingFXUtils.fromFXImage(chartWritableImage, null);
-                ImageIO.write(chartImage, "png", chartImageStream);
+                try {
+                    BufferedImage chartImage = SwingFXUtils.fromFXImage(chartWritableImage, null);
+                    ImageIO.write(chartImage, "png", chartImageStream);
+                } catch (Exception e) {
+                    File alertPng = new File("/pngs/alert-128.png");
+                    BufferedImage chartImage = ImageIO.read(alertPng);
+                    ImageIO.write(chartImage, "png", chartImageStream);
+                }
                 for (byte singleByte : chartImageStream.toByteArray()) {
                     byteList.add(singleByte);
                 }
@@ -97,6 +118,6 @@ public class ServerDataContainer {
     }
 
     public String getGeodata() {
-        return geodata;
+        return geodata.toString();
     }
 }

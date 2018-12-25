@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxWidth="1.7976931348623157E308" spacing="20.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+				<HBox fx:id="serverTabImageContainer" alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="30.0">
+					<children>
+						<Label fx:id="serverTabGeoLabel" lineSpacing="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Получение информации..." wrapText="true">
+							<font>
+								<Font name="System Bold" size="14.0" />
+							</font>
+						</Label>
+						<ImageView fx:id="serverTabGeoImage" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="/pngs/loading.gif" />
+							</image>
+						</ImageView>
+					</children>
+				</HBox>
+				<LineChart fx:id="serverTabPingChart" maxWidth="1.7976931348623157E308" minWidth="150.0" style="-fx-background-color: #FFFFFF;">
+					<xAxis>
+						<CategoryAxis side="BOTTOM" />
+					</xAxis>
+					<yAxis>
+						<NumberAxis side="LEFT" />
+					</yAxis>
+				</LineChart>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

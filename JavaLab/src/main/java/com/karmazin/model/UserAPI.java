@@ -59,9 +59,25 @@ public class UserAPI {
                         UserTable.COLS.STATUS + ");");
 
                 dbInitialization.close();
+
+                Statement userAdding = userDB.createStatement();
+
+                logger.log(Level.INFO,"Attempt to create new UserDB record");
+
+                userAdding.execute("INSERT INTO " + UserTable.NAME + "(" +
+                        UserTable.COLS.LOGIN + ", " +
+                        UserTable.COLS.PASSWORD + ", " +
+                        UserTable.COLS.STATUS + ") " +
+                        "VALUES (" +
+                        "'admin', " +
+                        "'admin', " +
+                        "'Developer');");
+
+                userAdding.close();
+
+
             } catch (SQLException e) {
                 logger.log(Level.SEVERE, "DB initialize error!", e);
-                e.printStackTrace();
             }
         }
 
@@ -103,7 +119,6 @@ public class UserAPI {
                     return true;
                 } catch (SQLException e) {
                     logger.log(Level.SEVERE, "User registration error!");
-                    e.printStackTrace();
 
                     return false;
                 }
@@ -159,10 +174,28 @@ public class UserAPI {
                 }
             } catch (SQLException e) {
                 logger.log(Level.SEVERE, "Wrong SQL request", e);
-                e.printStackTrace();
 
                 new SimplePopup().setupWindow(e.getMessage());
                 return UserType.Unauthorized;
+            }
+        }
+
+        public static boolean passwordChange(String login, String newPassword) {
+            if (login == null || newPassword == null || login.equals("") || newPassword.equals("")) {
+                return false;
+            }
+
+            try (Statement passwordUpdate = userDB.createStatement()) {
+                logger.log(Level.INFO,"Attempt to change UserDB record (password update)");
+
+                return passwordUpdate.execute("UPDATE " +
+                        UserTable.NAME + " " +
+                        "SET " + UserTable.COLS.PASSWORD + " = '" + newPassword + "' " +
+                        "WHERE " + UserTable.COLS.LOGIN + " = '" + login + "';");
+            } catch (SQLException e) {
+                logger.log(Level.SEVERE, "Wrong SQL request", e);
+
+                return false;
             }
         }
     }
@@ -176,7 +209,7 @@ public class UserAPI {
         currentSession =  UserDB.loginUser(login, password);
 
         if (currentSession != UserType.Unauthorized) {
-            ConfigAPI.setLoginData(login, password);
+            ConfigWrapper.setLoginData(login, password);
 
             logger.log(Level.INFO, "User succefully logged in");
 
@@ -190,8 +223,8 @@ public class UserAPI {
         logger.log(Level.INFO, "Logging by saved data...");
 
         // Reading saved login and password
-        String login = ConfigAPI.getLogin();
-        String password = ConfigAPI.getPassword();
+        String login = ConfigWrapper.getLogin();
+        String password = ConfigWrapper.getPassword();
 
         // Trying to get acces using them
         if (login != null && password != null) {
@@ -210,8 +243,24 @@ public class UserAPI {
             // Проверка успешности регистрации
             if (UserDB.regUser(login, password, status)) {
                 currentSession = status;
+                if (currentSession != UserType.Unauthorized) {
+                    ConfigWrapper.setLoginData(login, password);
+                }
 
                 return currentSession != UserType.Unauthorized;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public static boolean updatePassword(String login, String newPassword) {
+        if (currentSession.equals(UserType.Developer) || login.equals(ConfigWrapper.getLogin())) {
+            if (UserDB.passwordChange(login, newPassword)) {
+                ConfigWrapper.setLoginData(ConfigWrapper.getLogin(), newPassword);
+                return true;
             } else {
                 return false;
             }

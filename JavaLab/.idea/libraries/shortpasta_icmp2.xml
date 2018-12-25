@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="shortpasta-icmp2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/shortpasta-icmp2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

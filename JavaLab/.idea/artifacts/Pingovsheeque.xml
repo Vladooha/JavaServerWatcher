@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Pingovsheeque">
+    <output-path>E:/builds/PingovsheequeICMP</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.karmazin.controller.LoginScreen" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Pingovsheeque.jar">
+        <element id="module-output" name="Pingovsheque" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="library" level="project" name="Maven: de.erichseifert.vectorgraphics2d:VectorGraphics2D:0.13" />
+        <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
+        <element id="library" level="project" name="Maven: javax.mail:mail:1.5.0-b01" />
+        <element id="library" level="project" name="Maven: org.ini4j:ini4j:0.5.1" />
+        <element id="library" level="project" name="Maven: org.jetbrains:annotations:16.0.3" />
+        <element id="library" level="project" name="Maven: org.json:json:20180813" />
+        <element id="library" level="project" name="Maven: org.knowm.xchart:xchart:3.5.2" />
+        <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.25.2" />
+        <element id="library" level="project" name="icmp4j-all" />
+        <element id="library" level="project" name="shortpasta-icmp2" />
+      </element>
+    </root>
+  </artifact>
+</component>

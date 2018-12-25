@@ -15,10 +15,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Side;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -68,12 +70,17 @@ public class StatisticsScreen {
     private TextField statisticTextPing;
 
     @FXML
+    private CheckBox statisticZeroPercCheckbox;
+
+    @FXML
     private Button statisticButtonOk;
 
     @FXML
     private ScrollPane statisticScrollPane;
     @FXML
     private AnchorPane statisticScrollAnchorPane;
+    @FXML
+    private NumberAxis statisticYAxis;
     @FXML
     private BarChart statisticChartPercent;
 
@@ -88,8 +95,8 @@ public class StatisticsScreen {
     @FXML
     void initialize() {
         // View pre-set
-        statisticDatePickBegin.setUserData(LocalDate.now());
-        statisticDatePickEnd.setUserData(LocalDate.now());
+        statisticDatePickBegin.setValue(LocalDate.now());
+        statisticDatePickEnd.setValue(LocalDate.now());
         statisticChartPercent.setLegendVisible(false);
 
         // Listeners
@@ -101,7 +108,7 @@ public class StatisticsScreen {
                 sortOrder = SortOrder.BEST_TO_WORST;
             }
 
-            String mode = "ping";
+            String mode = "serv";
             if (statisticButtonModeHttp.isSelected()) {
                 mode = "http";
             } else if (statisticButtonModePing.isSelected()) {
@@ -124,11 +131,11 @@ public class StatisticsScreen {
             try {
                 goodTime = Integer.parseInt(statisticTextGoodtime.getText());
                 midTime = Integer.parseInt(statisticTextMidtime.getText());
-                if (goodTime <= midTime) {
+                if (goodTime <= midTime || goodTime > 100 || midTime > 100) {
                     throw new Exception();
                 }
             } catch (Exception e) {
-                new SimplePopup().setupWindow("Неправильно введено время отклика!");
+                new SimplePopup().setupWindow("Неправильно введены проценты!");
                 return;
             }
 
@@ -140,13 +147,30 @@ public class StatisticsScreen {
                 return;
             }
 
-            setupGraph(begin, end, sortOrder, mode, goodTime, midTime, coolPing);
+            boolean noZeroValues = statisticZeroPercCheckbox.isSelected();
+
+            setupGraph(begin, end, sortOrder, mode, goodTime, midTime, coolPing, noZeroValues);
         });
+
+//        CategoryAxis xAxis = (CategoryAxis) statisticChartPercent.getXAxis();
+//        xAxis.layoutXProperty().bind(
+//                statisticScrollPane.hvalueProperty()
+//                        .multiply(
+//                                statisticScrollAnchorPane.widthProperty()
+//                                        .subtract(
+//                                                new ScrollPaneViewPortWidthBinding(statisticScrollPane))));
+
+//        statisticScrollPane.hvalueProperty().addListener((list, oldPos, newPos) -> {
+//            double pixelsScrolled = statisticChartPercent.getMaxWidth() *
+//                    (newPos.doubleValue() - oldPos.doubleValue());
+//            statisticYAxis.setTranslateX(pixelsScrolled);
+//            System.err.println(pixelsScrolled);
+//        });
     }
 
     public void setupWindow() {
         try {
-            xml = "/fxml/statisticsScreenVert.fxml";
+            xml = "/fxml/statisticsScreen.fxml";
             FXMLLoader loader = new FXMLLoader();
             Parent root = (Parent) loader.load(getClass().getResourceAsStream(xml));
 
@@ -165,8 +189,19 @@ public class StatisticsScreen {
 
     // Help-methods
     private void setupGraph(LocalDate begin, LocalDate end, SortOrder sortOrder,
-                            String mode, int goodTime, int midTime, int coolPing) {
+                            String mode, int goodTime, int midTime, int coolPing, boolean noZeroValues) {
         Map<String, Double> pingPercentage = calculatePingPercentage(begin, end, mode, coolPing);
+        if (noZeroValues) {
+            String[] keys = pingPercentage.keySet().toArray(new String[pingPercentage.keySet().size()]);
+
+            for (int i = 0; i < keys.length; ++i) {
+                String key = keys[i];
+
+                if (pingPercentage.get(key) == 0) {
+                    pingPercentage.remove(key);
+                }
+            }
+        }
 
         // Clearing old data
         statisticChartPercent.getData().clear();
@@ -175,13 +210,14 @@ public class StatisticsScreen {
         XYChart.Series seria = new XYChart.Series<>();
         statisticChartPercent.getData().add(seria);
         for (String IP : pingPercentage.keySet()) {
-            XYChart.Data<String, Double> data = new XYChart.Data<String, Double>(IP, pingPercentage.get(IP));
+            XYChart.Data<String, Double> data = new XYChart.Data<>(IP, pingPercentage.get(IP));
             seria.getData().add(data);
             data.getNode().setStyle("-fx-bar-fill: "
-                    .concat(data.getYValue().floatValue() > goodTime ? "green;":
-                            data.getYValue().floatValue() > midTime ? "yellow;"
-                                    : "red"));
-            data.getNode().setOpacity(0.65);
+                    .concat(data.getYValue().floatValue() > goodTime ? "rgba(0, 220, 0, 1);":
+                            data.getYValue().floatValue() > midTime ? "rgba(250, 250, 0, 1);"
+                                    : "rgba(250, 0, 0, 1)"));
+//            data.getNode().setStyle("-fx-bar-fill: rgba(100, 100, 220, 1)");
+//            data.getNode().setOpacity(0.95);
         }
 
         // Sorting added seria
@@ -215,8 +251,10 @@ public class StatisticsScreen {
             });
         }
 
+
         xAxis.setCategories(xAxisCategories);
         xAxis.setAutoRanging(true);
+
 
         // Legend setup
         statisticChartPercent.setLegendVisible(true);
@@ -228,16 +266,53 @@ public class StatisticsScreen {
                 new Rectangle(10,4, Color.YELLOW));
         Legend.LegendItem li3 = new Legend.LegendItem("Медленные сервера",
                 new Rectangle(10,4, Color.RED));
-        legend.getItems().setAll(li1, li2, li3);
+        Legend.LegendItem li4 = new Legend.LegendItem("Кол-во серверов: " + xAxisCategories.size());
+        legend.getItems().setAll(li1, li2, li3, li4);
+
+//        BackgroundFill backgroundFillRed = new BackgroundFill(
+//                Color.rgb(255, 0, 0, 0.65),
+//                null,
+//                null);
+//        BackgroundFill backgroundFillYellow = new BackgroundFill(
+//                Color.rgb(255, 255, 0, 0.65),
+//                null,
+//                null);
+//        BackgroundFill backgroundFillGreen = new BackgroundFill(
+//                Color.rgb(0, 255, 0, 0.65),
+//                null,
+//                null);
+//        Background background = new Background(backgroundFillRed, backgroundFillYellow, backgroundFillGreen);
+
+        Node background = statisticChartPercent.lookup(".chart-plot-background");
+        //int greenPercent =
+        background.setStyle("-fx-background-color: linear-gradient(" +
+                "to top, " +
+                "rgba(0, 0, 0, 0.0) " + ((midTime * 110.0 / 121.0) - 0.3) + "%, " +
+                "rgba(250, 250, 0, 0.5) " + ((midTime * 110.0 / 121.0) - 0.3) + "%, " +
+                "rgba(250, 250, 0, 0.5) " + ((midTime * 110.0 / 121.0) + 0.3) + "%, " +
+                "rgba(0, 0, 0, 0.0) " + ((midTime * 110.0 / 121.0) + 0.3) + "%, " +
+                "rgba(0, 0, 0, 0.0) " + ((goodTime * 110.0 / 121.0) - 0.3) + "%, " +
+                "rgba(0, 250, 0, 0.5) " + ((goodTime * 110.0 / 121.0) - 0.3) + "%, " +
+                "rgba(0, 250, 0, 0.5) " + ((goodTime * 110.0 / 121.0) + 0.3) + "%, " +
+                "rgba(0, 0, 0, 0.0) " + ((goodTime * 110.0 / 121.0) + 0.3) + "%);");
+
 
         // Scroll positions pre-set
-        if (pingPercentage.keySet().size() > 10) {
-            statisticChartPercent.setMinWidth(985.0 + (pingPercentage.keySet().size() - 10) * 100);
-            statisticScrollAnchorPane.setMinWidth(985.0 + (pingPercentage.keySet().size() - 10) * 100);
+        if (pingPercentage.keySet().size() > 8) {
+            statisticChartPercent.setCategoryGap(50.0);
+            statisticChartPercent.setMinWidth(985.0 + (pingPercentage.keySet().size() - 8) * 120);
+            statisticScrollAnchorPane.setMinWidth(985.0 + (pingPercentage.keySet().size() - 8) * 120);
+            //xAxis.setMinWidth(985.0 + (pingPercentage.keySet().size() - 10) * 100);
+            xAxis.setMaxWidth(685.0);
         } else {
+            statisticChartPercent.setCategoryGap(400.0 / pingPercentage.keySet().size());
             statisticChartPercent.setMinWidth(985.0);
             statisticScrollAnchorPane.setMinWidth(985.0);
+            //xAxis.setMinWidth(985.0);
+            xAxis.setMaxWidth(685.0);
+
         }
+        //statisticScrollPane.setHvalue(statisticScrollAnchorPane.getMinWidth());
     }
 
     private Map<String, Double> calculatePingPercentage(LocalDate begin, LocalDate end, String logType, int coolPing) {

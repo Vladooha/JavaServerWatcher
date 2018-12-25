@@ -1,8 +1,0 @@
-[01:10:29] |youtube.com|: 4
-[01:10:29] |youtube.com|: 3
-[01:10:29] |youtube.com|: 3
-[01:10:30] |youtube.com|: 3
-[01:10:30] |youtube.com|: 3
-[01:10:31] |youtube.com|: 3
-[01:10:31] |youtube.com|: 3
-[01:10:32] |youtube.com|: 3

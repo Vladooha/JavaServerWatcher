@@ -1,139 +1,87 @@
 package com.karmazin.model;
 
-import javafx.util.Pair;
+import org.ini4j.Ini;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.logging.Level;
 
-final public class ConfigAPI {
-    private static ConfigMaster config;
+public class ConfigAPI {
+    private static LoggerAPI logger = new LoggerAPI(ConfigAPI.class.getName());
 
-    // .ini file data
-    private final static String configAdress = "./config/config.ini";
+    private String configAdress;
 
-    private final static String userSettingsSection = "UserSettings";
-    private final static String loginKey = "lastLogin";
-    private final static String passKey = "lastPass";
-    private final static String emailKey = "lastEmail";
-    private final static String debugKey = "debugMode";
-    private final static String selfTestKey = "selfTestMode";
-
-    private final static String windowSettingsSection = "WindowSettings";
-    private final static String heightKey = "height";
-    private final static String widthKey = "width";
-
-    // Initialize fields with empty values.
-    static {
-        config = new ConfigMaster(configAdress);
+    public ConfigAPI(String configAdress) {
+        this.configAdress = configAdress;
     }
 
-    public static void createConfigFile() {
-        File configFile = new File(configAdress);
-        if (!configFile.exists()) {
-            config.create();
+    public boolean write(String section, String key, Object value) {
+        if (configAdress == null || configAdress.equals("")) {
+            return false;
+        } else {
+            try {
+                Ini iniWrite;
+                iniWrite = new Ini();
+                File configFile = new File(configAdress);
+                iniWrite.load(new FileInputStream(configFile));
+                iniWrite.remove(section, key);
+                iniWrite.put(section, key, value);
+                iniWrite.store(new FileOutputStream(configFile));
 
-            // Writing 'userSettings' sector
-            config.write(userSettingsSection, loginKey, "");
-            config.write(userSettingsSection, passKey, "");
-            config.write(userSettingsSection, emailKey, "");
-            config.write(userSettingsSection, debugKey, "false");
-            config.write(userSettingsSection, selfTestKey, "false");
-
-            // Writing 'windowsSettings' sector
-            config.write(windowSettingsSection, heightKey, 600);
-            config.write(windowSettingsSection, widthKey, 800);
+                return true;
+            } catch (IOException e) {
+                return false;
+            }
         }
     }
 
-    /// User settings sector
-
-    // debug field control
-    public static void setDebug(boolean option) {
-        config.write(userSettingsSection, debugKey, option);
-    }
-
-    public static boolean getDebug() {
-        return Boolean.parseBoolean(config.read(userSettingsSection, debugKey));
-    }
-
-    // selfTest field control
-    public static void setSelfTest(boolean option) {
-        config.write(userSettingsSection, selfTestKey, option);
-    }
-
-    public static boolean getSelfTest() {
-        return Boolean.parseBoolean(config.read(userSettingsSection, selfTestKey));
-    }
-
-    // Login data fields control
-    public static String getLogin() {
-        return config.read(userSettingsSection, loginKey);
-    }
-
-    public static String getPassword() {
-        return config.read(userSettingsSection, passKey);
-    }
-
-    public static void setLoginData(String login, String password) {
-        config.write(userSettingsSection, loginKey, login);
-        config.write(userSettingsSection, passKey, password);
-    }
-
-    public static void unlogin() {
-        config.write(userSettingsSection, loginKey, "");
-        config.write(userSettingsSection, passKey, "");
-    }
-
-    // Email data fields control
-    public static void setEmail(String option) {
-        config.write(userSettingsSection, emailKey, option);
-    }
-
-    public static String getEmail() {
-        return config.read(userSettingsSection, emailKey);
-    }
-
-    /// WindowSettings sector
-
-    // Resolution control
-    public static void setResolution(int height, int width) {
-        config.write(windowSettingsSection, heightKey, height);
-        config.write(windowSettingsSection, widthKey, width);
-    }
-
-    public static Pair<Integer, Integer> getResolution() {
-        int val1 = Integer.parseInt(config.read(windowSettingsSection, heightKey));
-        int val2 = Integer.parseInt(config.read(windowSettingsSection, widthKey));
-        return new Pair<>(val1, val2);
-    }
-
-    ///--------------------------------------------ShouldBeRemoved--------------------------------------------
-
-//    public static boolean closeServerTab() {
-//        // Check user access level
-//        if (sessionStatus().equals(UserAPI.UserType.Unauthorized)) {
-//            // UserAPI has not rights to execute the command
-//            return false;
-//        } else {
-//            // UserAPI has rights to execute a command
-//            if (executor != null) {
-//                executor.shutdownNow();
-//                executor = null;
-//            }
-//
-//            return true;
-//        }
-//    }
-
-    public static GeolocationAPIData getGeoData(String IP) {
-        if (UserAPI.getStatus().equals(UserAPI.UserType.Unauthorized)) {
-            // UserAPI has not rights to execute the command
+    public String read(String section, String key) {
+        if (configAdress == null || configAdress.equals("")) {
             return null;
         } else {
-            // UserAPI has rights to execute a command
-            return new GeolocationAPI().sendRequest(IP);
+            try {
+                Ini iniRead;
+                iniRead = new Ini();
+                iniRead.load(new File(configAdress));
+                String result = iniRead.get(section, key);
+
+                return result;
+            } catch (IOException e) {
+                return null;
+            }
         }
     }
 
-    // When exiting the program, temporary maps are deleted.
-    // -------------------------------------- ExitProcedure --------------------------------------
+    public boolean create() {
+        if (configAdress == null || configAdress.equals("")) {
+            return false;
+        } else {
+            File configFile = new File(configAdress);
+            if (configFile.exists()) {
+
+                return true;
+            } else {
+                try {
+                    configFile.getParentFile().mkdirs();
+                    configFile.createNewFile();
+
+                    return true;
+                } catch (IOException e) {
+                    logger.log(Level.WARNING, "Can't create config file!");
+
+                    return false;
+                }
+            }
+        }
+    }
+
+    public boolean writeIfNotExists(String section, String key, Object value) {
+        if (read(section, key) == null) {
+            return write(section, key, value);
+        } else {
+            return false;
+        }
+    }
 }

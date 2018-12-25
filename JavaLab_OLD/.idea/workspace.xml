@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaLab:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f4d88c6-cb18-4f47-984b-833335ef2419" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/testScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/.idea/artifacts/Launcher_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Launcher/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JARJavaLab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaLab.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaLab.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/unnamed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log.txt.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/servLog_10_12_2018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/servLog_11_12_2018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/servLog_13_12_2018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/servLog_13_12_2018.txt.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/servLog_5_12_2018.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sysload.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sysload.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/VectorGraphics2D-0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/annotations-16.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/cache/userDB/userList.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/FokenTrash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/LoginScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/OneElementScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/SimplePopup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/TestPreset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/WorkScreen$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/WorkScreen$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/controller/WorkScreen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ConfigAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ConfigMaster.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/GeolocationAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/GeolocationAPIData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/HttpWatcher$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/HttpWatcher$Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/HttpWatcher$HttpParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/HttpWatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/LoggerAPI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/LoggerAPI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/LoggerAPI$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/LoggerAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/PingAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ProcessData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ProcessList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ProcessWatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/SQLiteBaseAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/SelfTester$RunnableWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/SelfTester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/SendHTMLEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/ServerPingWatcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/UserAPI$UserDB$UserTable$COLS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/UserAPI$UserDB$UserTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/UserAPI$UserDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/UserAPI$UserType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/UserAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/com/karmazin/model/YandexMapsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/config/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/fxml/loginScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/fxml/oneElementScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/fxml/simplePopupScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/fxml/testPresetScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/fxml/workScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/ini4j-0.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/jcommon-1.0.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/jfreechart-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/json-20180813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/logs/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/logs/log.txt.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/logs/log.txt.1.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/logs/logger.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/logs/sysload.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/mail-1.5.0-b01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/pngs/PapichLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/pngs/alert-128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/sqlite-jdbc-3.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/tests/100_sites.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/tests/sites_ip.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/AppTest/xchart-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JARJavaLab/JavaLab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/JavaLab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/JavaLab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/JavaLab.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab.jnlp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/JavaLab.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/JavaLab.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/JavaLab.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/JavaLab.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/config/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/VectorGraphics2D-0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/annotations-16.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/ini4j-0.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/jcommon-1.0.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/jfreechart-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/json-20180813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/mail-1.5.0-b01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/sqlite-jdbc-3.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/libs/xchart-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/logs/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/app/userList.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/msvcp140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/packager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/THIRDPARTYLICENSEREADME-JAVAFX.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/THIRDPARTYLICENSEREADME.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/Welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/JAWTAccessBridge-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/JavaAccessBridge-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/WindowsAccessBridge-64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-private-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/attach.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/awt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/bci.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/concrt140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/dcpr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/decora_sse.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/deploy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/dt_shmem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/dt_socket.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/fontmanager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/fxplugins.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/glass.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/glib-lite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/gstreamer-lite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/hprof.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/instrument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/j2pcsc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/j2pkcs11.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jaas_nt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/java.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/java_crw_demo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/javafx_font.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/javafx_font_t2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/javafx_iio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jawt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jdwp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jfr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jfxmedia.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jfxwebkit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jsdt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jsound.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/jsoundds.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/kcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/lcms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/management.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/mlib_image.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/msvcp140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/msvcr100.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/nio.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/npt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/plugin2/msvcr100.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/plugin2/npjp2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/prism_common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/prism_d3d.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/prism_sw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/resource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/sawindbg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/server/Xusage.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/server/classes.jsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/server/jvm.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/splashscreen.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/sunec.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/sunmscapi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/t2k.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/unpack.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/vcruntime140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/verify.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/w2k_lsa_auth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/bin/zip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/accessibility.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/amd64/jvm.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/calendars.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/charsets.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/classlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/cmm/CIEXYZ.pf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/cmm/GRAY.pf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/cmm/LINEAR_RGB.pf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/cmm/PYCC.pf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/cmm/sRGB.pf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/content-types.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/currency.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/access-bridge-64.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/cldrdata.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/dnsns.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/jaccess.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/jfxrt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/localedata.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/meta-index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/nashorn.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/sunec.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/sunjce_provider.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/sunmscapi.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/sunpkcs11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/ext/zipfs.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/flavormap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fontconfig.bfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fontconfig.properties.src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaBrightDemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaBrightDemiItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaBrightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaBrightRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaSansDemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaSansRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaTypewriterBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/fonts/LucidaTypewriterRegular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/hijrah-config-umalqura.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/cursors.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/invalid32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_CopyDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_CopyNoDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_LinkDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_LinkNoDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_MoveDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/images/cursors/win32_MoveNoDrop32x32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/javafx.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/javaws.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jce.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jfr.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jfr/default.jfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jfr/profile.jfc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jfxswt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jsse.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/jvm.hprof.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/management-agent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/management/jmxremote.access" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/management/jmxremote.password.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/management/management.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/management/snmp.acl.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/meta-index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/net.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/psfont.properties.ja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/psfontj2d.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/resources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/rt.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/blacklist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/blacklisted.certs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/cacerts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/java.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/java.security" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/javaws.policy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/policy/limited/US_export_policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/policy/limited/local_policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/policy/unlimited/US_export_policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/policy/unlimited/local_policy.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/security/trusted.libraries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/sound.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/tzdb.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/runtime/lib/tzmappings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/JavaLab/vcruntime140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/VectorGraphics2D-0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/annotations-16.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/ini4j-0.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/jcommon-1.0.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/jfreechart-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/json-20180813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/mail-1.5.0-b01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/sqlite-jdbc-3.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/bundles/libs/xchart-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/VectorGraphics2D-0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/annotations-16.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/ini4j-0.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/jcommon-1.0.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/jfreechart-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/json-20180813.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/mail-1.5.0-b01.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/sqlite-jdbc-3.25.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/libs/xchart-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/JavaLab/logs/log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/unnamed.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/StatisticsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/StatisticsScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPIData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPIData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/UserAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/UserAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/loginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/loginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/statisticsScreenVert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/statisticsScreenVert.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/testPresetScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/LoginScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/LoginScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/SimplePopup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen$1ServerPingValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen$1ServerPingValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen$SortOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen$SortOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/StatisticsScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/TestPreset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/controller/WorkScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ConfigMaster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/GeolocationAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/GeolocationAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher$Code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher$HttpParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/HttpWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/LoggerAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/PingAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/PingAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ProcessWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ProcessWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester$RunnableWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/SelfTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/SendHTMLEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/SendHTMLEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/ServerPingWatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/ServerPingWatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/UserAPI$UserDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/UserAPI$UserDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/UserAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/UserAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/karmazin/model/YandexMapsAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/karmazin/model/YandexMapsAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/loginScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/loginScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/simplePopupScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/simplePopupScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/statisticsScreenVert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/statisticsScreenVert.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/testPresetScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/workScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/workScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userList.db" beforeDir="false" afterPath="$PROJECT_DIR$/userList.db" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Pingovsheque$LoginScreen.ic" NAME="LoginScreen Coverage Results" MODIFIED="1544880457991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.karmazin.controller.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="309783672">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="14" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="3" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="fxml" value="12" />
+          <entry key="java" value="103" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="103" />
+          <entry key="XML" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="22" />
+          <entry key="fxml" value="119" />
+          <entry key="java" value="31441" />
+          <entry key="xml" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="31441" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="XML" value="143" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3672">
+              <caret line="428" column="37" selection-start-line="428" selection-start-column="37" selection-end-line="428" selection-end-column="37" />
+              <folding>
+                <element signature="class#MainTab#0;class#WorkScreen#0" />
+                <marker date="1545165920697" expanded="true" signature="5765:8086" ph="..." />
+                <marker date="1545165920697" expanded="true" signature="21602:21925" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="80" column="42" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreenTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#createChart#0;class#WorkScreenTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1545159178100" expanded="true" signature="2108:2492" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="107" column="58" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/UserAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1156">
+              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/StatisticsScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4369">
+              <caret line="287" column="99" selection-start-line="287" selection-start-column="99" selection-end-line="287" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1545158129744" expanded="true" signature="6698:6988" ph="..." />
+                <marker date="1545158129744" expanded="true" signature="7003:7067" ph="..." />
+                <marker date="1545158129744" expanded="true" signature="10518:11102" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Conf</find>
+      <find>ServerP</find>
+      <find>Platf</find>
+      <find>slee</find>
+      <find>Waiti</find>
+      <find>http</find>
+      <find>Tab</find>
+      <find>broke</find>
+      <find>local</find>
+      <find>test</find>
+      <find>setupT</find>
+      <find>ServerDataC</find>
+      <find>setupTe</find>
+      <find>void setupWindow</find>
+      <find>delA</find>
+      <find>clear</find>
+      <find>remove</find>
+      <find>re</find>
+      <find>delS</find>
+      <find>contentP</find>
+      <find>font</find>
+      <find>yandex</find>
+      <find>chart</find>
+      <find>setOu</find>
+      <find>setupW</find>
+      <find>Око</find>
+      <find>вр</find>
+      <find>р</find>
+      <find>while (re</find>
+      <find>Pingo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SQLiteBaseAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerDataContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/statisticsScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPIData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/mainTab.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/statisticsScreenVert.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/MainTab.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/menuTab.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/settingsScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SettingsScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestPreset.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkClassTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreenTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/StatisticsScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/UserAPI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="400" />
+    <option name="y" value="55" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Pingovsheque" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaLab" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545165655365" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaLab2/pom.xml" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29885057" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="LoginScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.karmazin.controller.LoginScreen" />
+      <module name="JavaLab" />
+      <option name="VM_PARAMETERS" value="-Djava.util.logging.config.file=&quot;./logs/logger.properties&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.karmazin.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginScreen" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f4d88c6-cb18-4f47-984b-833335ef2419" name="Default Changelist" comment="" />
+      <created>1543433309540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543433309540</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21208054" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="6" sideWeight="0.4978903" weight="0.24966443" />
+      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="6" sideWeight="0.4978903" weight="0.24966443" />
+      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5021097" side_tool="true" weight="0.24966443" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/glass/ui/win/WinApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SQLiteBaseAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/OneElementScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/ext/jfxrt.jar!/com/sun/javafx/css/StyleManager.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/statisticsScreen.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/statisticsScreen1.fxml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/geometry/Side.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/chart/Chart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="222" column="16" selection-start-line="222" selection-start-column="16" selection-end-line="222" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPIData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/statisticsScreenVert.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/MainTab.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/menuTab.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settingsScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/simplePopupScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerDataContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/GeolocationAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/javafx/tk/quantum/QuantumToolkit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="517" selection-start-line="517" selection-end-line="517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/PingAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/LoggerAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="178" column="16" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ServerPingWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ProcessWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="225" column="45" selection-start-line="225" selection-start-column="45" selection-end-line="225" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SettingsScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SendHTMLEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/HttpWatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/ConfigAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3672">
+          <caret line="428" column="37" selection-start-line="428" selection-start-column="37" selection-end-line="428" selection-end-column="37" />
+          <folding>
+            <element signature="class#MainTab#0;class#WorkScreen#0" />
+            <marker date="1545165920697" expanded="true" signature="5765:8086" ph="..." />
+            <marker date="1545165920697" expanded="true" signature="21602:21925" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/LoginScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/YandexMapsAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/WorkScreenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createChart#0;class#WorkScreenTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/SimplePopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/TestScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1545159178100" expanded="true" signature="2108:2492" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/SelfTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="107" column="58" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/model/UserAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmazin/controller/StatisticsScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4369">
+          <caret line="287" column="99" selection-start-line="287" selection-start-column="99" selection-end-line="287" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1545158129744" expanded="true" signature="6698:6988" ph="..." />
+            <marker date="1545158129744" expanded="true" signature="7003:7067" ph="..." />
+            <marker date="1545158129744" expanded="true" signature="10518:11102" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="80" column="42" selection-start-line="80" selection-start-column="31" selection-end-line="80" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>JavaLab</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.29885057" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>JavaLab</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jpcap-0.1.18-002</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

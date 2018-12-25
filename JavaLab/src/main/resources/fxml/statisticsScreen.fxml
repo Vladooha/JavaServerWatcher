@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="765.0" minWidth="1154.0" prefHeight="782.0" prefWidth="1178.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.karmazin.controller.StatisticsScreen">
+	<children>
+		<SplitPane dividerPositions="0.08623548922056384" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0">
+			<items>
+				<AnchorPane maxHeight="800.0" maxWidth="200.0" minHeight="800.0" minWidth="200.0" prefHeight="800.0" prefWidth="200.0">
+					<children>
+						<VBox alignment="TOP_CENTER" maxHeight="800.0" maxWidth="200.0" minHeight="800.0" minWidth="200.0" prefHeight="800.0" prefWidth="200.0" spacing="10.0">
+							<children>
+								<Label text="Время">
+									<VBox.margin>
+										<Insets top="30.0" />
+									</VBox.margin>
+								</Label>
+								<HBox alignment="CENTER_RIGHT" spacing="15.0">
+									<children>
+										<VBox alignment="CENTER" prefHeight="65.0" prefWidth="50.0" spacing="10.0">
+											<children>
+												<Label text="От:">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Label>
+												<Label text="До:">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Label>
+											</children>
+										</VBox>
+										<VBox prefHeight="65.0" prefWidth="170.0" spacing="5.0">
+											<children>
+												<DatePicker fx:id="statisticDatePickBegin" minWidth="140.0" prefHeight="30.0" prefWidth="150.0" />
+												<DatePicker fx:id="statisticDatePickEnd" minWidth="140.0" prefHeight="30.0" prefWidth="150.0" />
+											</children>
+										</VBox>
+									</children>
+									<padding>
+										<Insets left="10.0" right="10.0" />
+									</padding>
+									<VBox.margin>
+										<Insets />
+									</VBox.margin>
+								</HBox>
+								<Label text="Сортировка">
+									<VBox.margin>
+										<Insets top="25.0" />
+									</VBox.margin>
+								</Label>
+								<VBox alignment="CENTER_LEFT" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" spacing="5.0">
+									<children>
+										<RadioButton fx:id="statisticButtonSortName" mnemonicParsing="false" selected="true" text="По имени сервера">
+											<toggleGroup>
+												<ToggleGroup fx:id="sortGroup" />
+											</toggleGroup>
+											<font>
+												<Font size="14.0" />
+											</font>
+										</RadioButton>
+										<RadioButton fx:id="statisticButtonSortBetter" mnemonicParsing="false" text="От лучшего времени отклика к худшему" toggleGroup="$sortGroup" wrapText="true">
+											<font>
+												<Font size="14.0" />
+											</font>
+										</RadioButton>
+										<RadioButton fx:id="statisticButtonSortWorst" mnemonicParsing="false" text="От худшего времени отклика к лучшему" toggleGroup="$sortGroup" wrapText="true">
+											<font>
+												<Font size="14.0" />
+											</font>
+										</RadioButton>
+									</children>
+								</VBox>
+								<Label layoutX="69.0" layoutY="173.0" text="Отклик по">
+									<padding>
+										<Insets top="15.0" />
+									</padding>
+								</Label>
+								<VBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="204.0" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" spacing="5.0">
+									<children>
+										<RadioButton fx:id="statisticButtonModePing" mnemonicParsing="false" selected="true" text="ping">
+											<toggleGroup>
+												<ToggleGroup fx:id="modeGroup" />
+											</toggleGroup>
+											<font>
+												<Font size="14.0" />
+											</font>
+										</RadioButton>
+										<RadioButton fx:id="statisticButtonModeHttp" mnemonicParsing="false" text="https" toggleGroup="$modeGroup">
+											<font>
+												<Font size="14.0" />
+											</font>
+										</RadioButton>
+									</children>
+								</VBox>
+								<Label layoutX="75.0" layoutY="284.0" text="Время оптимального отклика (мс)" textAlignment="CENTER" wrapText="true">
+									<padding>
+										<Insets top="15.0" />
+									</padding>
+								</Label>
+								<HBox prefHeight="20.0" prefWidth="200.0">
+									<children>
+										<TextField fx:id="statisticTextPing" text="50" />
+									</children>
+									<padding>
+										<Insets left="10.0" right="10.0" />
+									</padding>
+								</HBox>
+								<Label layoutX="75.0" layoutY="284.0" text="Минимальный % оптимальных откликов" textAlignment="CENTER" wrapText="true">
+									<padding>
+										<Insets top="15.0" />
+									</padding>
+								</Label>
+								<HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="71.0" spacing="15.0">
+									<children>
+										<VBox alignment="CENTER" prefHeight="65.0" prefWidth="155.0" spacing="5.0">
+											<children>
+												<Label text="Среднего сервера:">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Label>
+												<Label text="Быстрого сервера:">
+													<font>
+														<Font size="14.0" />
+													</font>
+												</Label>
+											</children>
+										</VBox>
+										<VBox prefHeight="65.0" prefWidth="70.0" spacing="5.0">
+											<children>
+												<TextField fx:id="statisticTextMidtime" text="75" />
+												<TextField fx:id="statisticTextGoodtime" text="90" />
+											</children>
+										</VBox>
+									</children>
+									<padding>
+										<Insets left="10.0" right="10.0" />
+									</padding>
+								</HBox>
+                        <CheckBox fx:id="statisticZeroPercCheckbox" mnemonicParsing="false" text="Не отображать сервера с нулевым %" wrapText="true">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </CheckBox>
+								<Button fx:id="statisticButtonOk" defaultButton="true" mnemonicParsing="false" text="Готово">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin></Button>
+							</children>
+						</VBox>
+					</children>
+				</AnchorPane>
+				<AnchorPane fx:id="statisticPaneGraph" maxHeight="800.0" maxWidth="1000.0" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0">
+					<children>
+						<ScrollPane fx:id="statisticScrollPane" blendMode="SRC_ATOP" maxHeight="795.0" maxWidth="990.0" minHeight="795.0" minWidth="990.0" prefHeight="795.0" prefWidth="990.0" vbarPolicy="NEVER">
+							<content>
+								<AnchorPane fx:id="statisticScrollAnchorPane" maxHeight="800.0" maxWidth="1.7976931348623157E308" minHeight="800.0" minWidth="985.0" prefHeight="800.0" prefWidth="985.0">
+									<children>
+										<BarChart fx:id="statisticChartPercent" animated="false" barGap="5.0" categoryGap="8.0" maxHeight="780.0" maxWidth="1.7976931348623157E308" minHeight="780.0" minWidth="1000.0" prefHeight="780.0" prefWidth="1000.0">
+											<xAxis>
+												<CategoryAxis animated="false" prefHeight="31.0" prefWidth="1137.0" side="BOTTOM" />
+											</xAxis>
+											<yAxis>
+												<NumberAxis fx:id="statisticYAxis" animated="false" autoRanging="false" label="Доля быстрых откликов" prefHeight="664.0" prefWidth="55.0" side="LEFT" tickLabelGap="10.0" tickLength="10.0" upperBound="110.0" />
+											</yAxis>
+										</BarChart>
+									</children>
+								</AnchorPane>
+							</content>
+						</ScrollPane>
+					</children>
+				</AnchorPane>
+			</items>
+		</SplitPane>
+	</children>
+</Pane>

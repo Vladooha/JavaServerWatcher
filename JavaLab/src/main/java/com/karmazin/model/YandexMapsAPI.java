@@ -54,7 +54,7 @@ public class YandexMapsAPI {
                         os.write(b, 0, length);
                     }
                 }
-            }
+            } catch (Exception e) { }
 
             image = new Image(new File(destinationFile).toURI().toString());
 

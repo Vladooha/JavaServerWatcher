@@ -1,6 +1,8 @@
 package com.karmazin.model;
 
+import org.jetbrains.annotations.Nullable;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,11 +19,28 @@ import java.util.logging.Level;
  * Есть ограничение на 150 запросов в минуту
  * Unban IP here http://ip-api.com/docs/unban
  */
+@Nullable
 public class GeolocationAPI {
     private static final LoggerAPI logger = new LoggerAPI(GeolocationAPI.class.getName());
 
+    /** Status of request success/fail */
+    private String status;
+    /** Country */
+    private String country;
+    /** City */
+    private String city;
+    /** Latitude */
+    private float lat;
+    /** Longitude */
+    private float lon;
+    /** Name of organization */
+    private String org;
+    /** IP of request */
+    private String query;
+    /** Error message (if have) */
+    private String message;
 
-    public GeolocationAPIData sendRequest(String IP) {
+    public synchronized static GeolocationAPI sendRequest(String IP) {
         logger.log(Level.INFO, "Recieving server's [" + IP + "] geolocation...");
 
         // Фильтр для ответа
@@ -40,8 +59,8 @@ public class GeolocationAPI {
                 while ((line = input.readLine()) != null) {
                     response.append(line);
                 }
-                GeolocationAPIData data = new GeolocationAPIData(response.toString());
-                //System.out.println(data);
+
+                GeolocationAPI data = new GeolocationAPI(response.toString());
 
                 logger.log(Level.INFO,"Geolocation recieved!");
 
@@ -53,8 +72,50 @@ public class GeolocationAPI {
             logger.log(Level.SEVERE,"Input/output stream error!", e);
         } catch (JSONException e) {
             logger.log(Level.SEVERE,e.getMessage(), e);
+        } finally {
+            // GeoAPI anti-DDoS requerement
+            try {
+                Thread.sleep(450);
+            } catch (InterruptedException e) { }
         }
         return null;
+    }
+
+    private GeolocationAPI(String response) throws JSONException {
+
+        JSONObject json = new JSONObject(response);
+
+        status = json.getString("status");
+        if (status.equals("fail")) {
+            message = json.getString("message");
+            throw new JSONException("Статус запроса fail, " + message);
+        }
+
+        city = json.getString("city");
+        country = json.getString("country");
+        lat = json.getFloat("lat");
+        lon = json.getFloat("lon");
+        org = json.getString("org");
+        query = json.getString("query");
+    }
+
+    @Override
+    public String toString() {
+        return
+                "IP: " + query + "\n" +
+                        "Страна: " + country + "\n" +
+                        "Город: " + city + "\n" +
+                        "Организация: " + org + "\n" +
+                        "Широта: " + lat + "\n" +
+                        "Долгота: " + lon;
+    }
+
+    public float getLat() {
+        return lat;
+    }
+
+    public float getLon() {
+        return lon;
     }
 }
 
